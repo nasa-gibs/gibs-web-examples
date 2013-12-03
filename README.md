@@ -21,6 +21,12 @@ Overview
 -------------
 Clone the repository and open the index.html file in your browser.
 
+All examples show a single layer, Corrected Reflectance. Visit the
+[GIBS Available Imagery Products](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products)
+for parameters needed to display other layers.
+
+[Worldview](https://earthdata.nasa.gov/worldview) is a web application that
+uses GIBS as its primary image source.
 
 OpenLayers 2
 -------------------
@@ -39,9 +45,9 @@ This example uses [Leaflet](http://leafletjs.com) version 0.6.4.
 
 To properly support the polar projections, the
 [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) plugin must be
-installed. This example uses Proj4Leaflet version 0.6.2.
+used. This example uses Proj4Leaflet version 0.6.2.
 
-The version of  [proj4js](http://trac.osgeo.org/proj4js) shipped with
+The version of [proj4js](http://trac.osgeo.org/proj4js) shipped with
 Proj4Leaflet is too old and must be replaced with version 2.0.0.
 
 Questions
