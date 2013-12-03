@@ -69,7 +69,7 @@ window.onload = function() {
         attribution:
             "<a href='https://earthdata.nasa.gov/gibs'>" +
             "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
-            "<a href='https://github.com/nasa-gibs/web-examples/blob/master/leaflet/js/EPSG3413.js'>" +
+            "<a href='https://github.com/nasa-gibs/web-examples/blob/master/leaflet/js/arctic-epsg3413.js'>" +
             "View Source" +
             "</a>"
     });
