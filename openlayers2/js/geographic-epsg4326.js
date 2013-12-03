@@ -43,6 +43,8 @@ window.onload = function() {
         format: "image/jpeg",
         projection: "EPSG:4326",
         attribution:
+            "<a href='http://openlayers.org'>" +
+            "OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
             "<a href='https://earthdata.nasa.gov/gibs'>" +
             "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
             "<a href='https://github.com/nasa-gibs/web-examples/blob/master/openlayers2/js/EPSG4326.js'>" +
