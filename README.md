@@ -9,13 +9,13 @@ Live Examples
 -------------
 
 * OpenLayers 2
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/gibs/examples/openlayers2/geographic-epsg4326.html)
- * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/gibs/examples/openlayers2/arctic-epsg3413.html)
- * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/gibs/examples/openlayers2/antarctic-epsg3031.html)
+ * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/geographic-epsg4326.html)
+ * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/arctic-epsg3413.html)
+ * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/antarctic-epsg3031.html)
 * Leaflet
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/gibs/examples/leaflet/geographic-epsg4326.html)
- * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/gibs/examples/leaflet/arctic-epsg3413.html)
- * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/gibs/examples/leaflet/antarctic-epsg3031.html)
+ * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
+ * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
+ * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
 
 Overview
 --------
