@@ -18,11 +18,12 @@
 
 ARTIFACT=dist/gibs-web-examples.tar.gz
 
-all: $(ARTIFACT)
+all: rpm
 
-$(ARTIFACT):
+$(ARTIFACT): clean
 	mkdir -p dist
 	tar cvf $(ARTIFACT) \
+		--exclude=build \
 		--exclude=dist \
 		--transform='s,^,gibs-web-examples/,' \
 		*
