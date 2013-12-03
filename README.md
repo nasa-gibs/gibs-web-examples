@@ -1,4 +1,6 @@
-demo-openlayers2
-================
+web-examples
+============
 
-Demonstration of using OpenLayers 2 with GIBS
+Examples of using GIBS with various web mapping libraries.
+
+
