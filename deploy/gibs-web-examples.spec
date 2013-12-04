@@ -1,6 +1,6 @@
 Name:		gibs-web-examples
 Version:	1.0.0
-Release:	0.1%{?dist}
+Release:	1%{?dist}
 Summary:	Examples of using GIBS with various web mapping libraries
 
 License:	ASL 2.0
@@ -44,5 +44,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Mon Dec 2 2013 Mike McGann <mike.mcgann@nasa.gov> - 1.0.0-1
+* Wed Dec 4 2013 Mike McGann <mike.mcgann@nasa.gov> - 1.0.0-1
 - Initial package
