@@ -38,16 +38,16 @@ Due to a bug in OpenLayers, shearing in the map may occur when using Internet
 Explorer.
 
 To properly support the polar projections,
-[proj4js](http://trac.osgeo.org/proj4js) must be included. This example uses
-proj4js version 2.0.0.
+[proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
+example uses proj4js version 1.1.0.
 
 Leaflet
 -------
-This example uses [Leaflet](http://leafletjs.com) version 0.6.4.
+This example uses [Leaflet](http://leafletjs.com) version 0.7.2.
 
 To properly support the polar projections, the
 [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) plugin must be
-used. This example uses Proj4Leaflet version 0.6.2.
+used. This example uses Proj4Leaflet version 0.7.0.
 
 The version of [proj4js](http://trac.osgeo.org/proj4js) shipped with
 Proj4Leaflet is too old and must be replaced with version 2.0.0.
