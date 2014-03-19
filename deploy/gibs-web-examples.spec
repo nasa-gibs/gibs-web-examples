@@ -1,5 +1,5 @@
 Name:		gibs-web-examples
-Version:	1.0.0
+Version:	1.1.0
 Release:	1%{?dist}
 Summary:	Examples of using GIBS with various web mapping libraries
 
@@ -44,5 +44,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Mar 19 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.1.0-1
+- Upgraded leaflet
+- Fixed projection definition in the Arctic
+- OpenLayers 2 now uses proj4js version 1
+
 * Wed Dec 4 2013 Mike McGann <mike.mcgann@nasa.gov> - 1.0.0-1
 - Initial package
