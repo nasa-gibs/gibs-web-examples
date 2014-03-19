@@ -22,7 +22,7 @@ window.onload = function() {
 
     var EPSG3413 = new L.Proj.CRS(
         "EPSG:3413",
-        "+proj=sterea +lat_0=90 +lat_ts=70 +lon_0=-45 +k=1 +x_0=0 +y_0=0 " +
+        "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +k=1 +x_0=0 +y_0=0 " +
         "+ellps=WGS84 +datum=WGS84 +units=m +no_defs", {
             origin: [-4194304, 4194304],
             resolutions: [
@@ -69,7 +69,7 @@ window.onload = function() {
         attribution:
             "<a href='https://earthdata.nasa.gov/gibs'>" +
             "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
-            "<a href='https://github.com/nasa-gibs/web-examples/blob/master/leaflet/js/arctic-epsg3413.js'>" +
+            "<a href='https://github.com/nasa-gibs/web-examples/blob/release/leaflet/js/arctic-epsg3413.js'>" +
             "View Source" +
             "</a>"
     });

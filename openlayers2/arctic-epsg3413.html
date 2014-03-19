@@ -24,8 +24,13 @@
 
         <link rel="stylesheet" href="css/example.css"/>
 
-        <script src="lib/proj4.js"></script>
-        <script src="lib/OpenLayers.js"></script>
+        <script src="lib/proj4js-1.1.0/proj4js.js"></script>
+        <!-- Even though this projection isn't used here, proj4js will go
+             looking for it if it isn't provided -->
+        <script src="lib/proj4js-1.1.0/merc.js"></script>
+        <script src="lib/proj4js-1.1.0/stere.js"></script>
+        <script src="lib/openlayers-2.13.1/OpenLayers.js"></script>
+
         <script src="js/arctic-epsg3413.js"></script>
     </head>
 

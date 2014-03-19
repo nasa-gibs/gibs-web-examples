@@ -20,7 +20,7 @@
 
 window.onload = function() {
 
-    proj4.defs["EPSG:3031"] =
+    Proj4js.defs["EPSG:3031"] =
         "+title=WGS 84 / Antarctic Polar Stereographic " +
         "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +k=1 +x_0=0 +y_0=0 " +
         "+datum=WGS84 +units=m +no_defs";
@@ -52,7 +52,7 @@ window.onload = function() {
             "OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
             "<a href='https://earthdata.nasa.gov/gibs'>" +
             "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
-            "<a href='https://github.com/nasa-gibs/web-examples/blob/master/openlayers2/js/antarctic-epsg3031.js'>" +
+            "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers2/js/antarctic-epsg3031.js'>" +
             "View Source" +
             "</a>"
     });
