@@ -32,6 +32,10 @@ window.onload = function() {
                 1024.0,
                 512.0,
                 256.0
+            ],
+            bounds: [
+                [-4194304, -4194304],
+                [4194304, 4194304]
             ]
         }
     );
@@ -44,18 +48,8 @@ window.onload = function() {
     });
 
     var template =
-        "https://map1{s}.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi" +
-        "?SERVICE=WMTS" +
-        "&REQUEST=GetTile" +
-        "&VERSION=1.0.0" +
-        "&LAYER={layer}" +
-        "&STYLE=" +
-        "&TILEMATRIXSET={tileMatrixSet}" +
-        "&TILEMATRIX={z}" +
-        "&TILEROW={y}" +
-        "&TILECOL={x}" +
-        "&FORMAT={format}" +
-        "&TIME={time}";
+        "https://map1{s}.vis.earthdata.nasa.gov/wmts-antarctic/" +
+        "{layer}/default/{time}/{tileMatrixSet}/{z}/{y}/{x}.jpg";
 
     var layer = L.tileLayer(template, {
         layer: "MODIS_Aqua_CorrectedReflectance_TrueColor",
@@ -73,6 +67,22 @@ window.onload = function() {
             "View Source" +
             "</a>"
     });
+
+    // HACK: BEGIN
+    // Leaflet does not yet handle these kind of projections nicely. Monkey
+    // patch the getTileUrl function to ensure requests are within
+    // tile matrix set boundaries.
+    var superGetTileUrl = layer.getTileUrl;
+
+    layer.getTileUrl = function(coords) {
+        var max = Math.pow(2, layer._getZoomForUrl() + 1);
+        if ( coords.x < 0 ) { return ""; }
+        if ( coords.y < 0 ) { return ""; }
+        if ( coords.x >= max ) { return ""; }
+        if ( coords.y >= max ) { return ""; }
+        return superGetTileUrl.call(layer, coords);
+    };
+    // HACK: END
 
     map.addLayer(layer);
 };

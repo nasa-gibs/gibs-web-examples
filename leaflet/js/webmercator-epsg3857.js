@@ -23,6 +23,7 @@ window.onload = function() {
     var map = L.map("map", {
         center: [0, 0],
         zoom: 3,
+        // Values are x and y here instead of lat and long elsewhere.
         maxBounds: [
             [-120, -220],
             [120, 220]
@@ -30,29 +31,24 @@ window.onload = function() {
     });
 
     var template =
-        "https://map1{s}.vis.earthdata.nasa.gov/wmts-webmerc/wmts.cgi" +
-        "?SERVICE=WMTS" +
-        "&REQUEST=GetTile" +
-        "&VERSION=1.0.0" +
-        "&LAYER={layer}" +
-        "&STYLE=" +
-        "&TILEMATRIXSET={tileMatrixSet}" +
-        "&TILEMATRIX={z}" +
-        "&TILEROW={y}" +
-        "&TILECOL={x}" +
-        "&FORMAT={format}" +
-        "&TIME={time}";
+        "https://map1{s}.vis.earthdata.nasa.gov/wmts-webmerc/" +
+        "{layer}/default/{time}/{tileMatrixSet}/{z}/{y}/{x}.jpg";
 
     var layer = L.tileLayer(template, {
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         tileMatrixSet: "GoogleMapsCompatible_Level9",
         maxZoom: 9,
-        format: "image%2Fjpeg",
         time: "2013-11-04",
         tileSize: 256,
         subdomains: "abc",
         noWrap: true,
         continuousWorld: true,
+        // Prevent Leaflet from retrieving non-existent tiles on the
+        // borders.
+        bounds: [
+            [-85.0511287776, -179.999999975],
+            [85.0511287776, 179.999999975]
+        ],
         attribution:
             "<a href='https://earthdata.nasa.gov/gibs'>" +
             "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
