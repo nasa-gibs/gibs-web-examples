@@ -84,4 +84,6 @@ window.onload = function() {
 
     var layer = new ol.layer.Tile({source: source});
 
-    map.addLayer(layer);};
+    map.addLayer(layer);
+
+ };
