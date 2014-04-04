@@ -3,7 +3,7 @@ gibs-web-examples
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for [OpenLayers 2](http://openlayers.org),
-[Leaflet](http://leafletjs.com), and [OpenLayers 3](https://ol3js.org)
+[OpenLayers 3](https://ol3js.org), and [Leaflet](http://leafletjs.com).
 
 Live Examples
 -------------
@@ -13,16 +13,16 @@ Live Examples
  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/arctic-epsg3413.html)
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/webmercator-epsg3857.html)
-* Leaflet
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
- * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
- * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
 * OpenLayers 3
  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/geographic-epsg4326.html)
  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/arctic-epsg3413.html)
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/webmercator-epsg3857.html)
+* Leaflet
+ * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
+ * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
+ * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
+ * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
 
 Overview
 --------
@@ -51,6 +51,17 @@ If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
 example uses proj4js version 1.1.0. This is not required to simply display the map.
 
+OpenLayers 3
+--------------------
+This example uses [OpenLayers 3](http://ol3js.org/) version 0.3.0.beta.3.
+
+If geometry transformations are required using coordinates in the polar systems,
+[proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
+example uses proj4js version 1.1.0. This is not required to simply display the map.
+
+The ol.tilegrid.XYZ class is hard-coded to use EPSG:3857 and ol.tilegrid.WMTS must be used for other projections.
+
+In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. This requires overriding the tileUrlFunction and adding the parameter to the end of the URL string.
 
 Leaflet
 -------
@@ -67,17 +78,6 @@ GIBS now returns error codes if tiles are requested outside the tile matrix boun
 
 See: [https://github.com/kartena/Proj4Leaflet/issues/62](https://github.com/kartena/Proj4Leaflet/issues/62)
 
-OpenLayers 3
---------------------
-This example uses [OpenLayers 3](http://ol3js.org/) version 0.3.0.beta.3.
-
-If geometry transformations are required using coordinates in the polar systems,
-[proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
-example uses proj4js version 1.1.0. This is not required to simply display the map.
-
-The ol.tilegrid.XYZ class is hard-coded to use EPSG:3857 and ol.tilegrid.WMTS must be used for other projections.
-
-In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. This requires overriding the tileUrlFunction and adding the parameter to the end of the URL string.
 
 Questions
 ---------
