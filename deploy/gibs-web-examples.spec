@@ -44,10 +44,12 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Wed Mar 19 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.1.0-1
-- Upgraded leaflet
+* Fri Apr 4 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.1.0-1
+- Upgraded Leaflet
 - Fixed projection definition in the Arctic
 - OpenLayers 2 now uses proj4js version 1
+- Added OpenLayers 3
+- Leaflet monkey patch for OOB tiles
 
 * Wed Dec 4 2013 Mike McGann <mike.mcgann@nasa.gov> - 1.0.0-1
 - Initial package
