@@ -3,8 +3,7 @@ gibs-web-examples
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for [OpenLayers 2](http://openlayers.org),
-[OpenLayers 3](https://ol3js.org), [Leaflet](http://leafletjs.com),
-and [Bing](http://www.bing.com/maps/)
+[OpenLayers 3](https://ol3js.org), [Leaflet](http://leafletjs.com), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
 
 Live Examples
 -------------
@@ -26,6 +25,8 @@ Live Examples
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
 * Bing
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
+* Google Maps
+ * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/google/webmercator-epsg3857.html)
 
 Overview
 --------
@@ -90,6 +91,10 @@ Excessive flickering is visible when using Google Chrome.
 There is no straightforward way to restrict the zoom levels. GIBS returns 400 errors when over-zoomed for a layer.
 
 See: [http://stackoverflow.com/questions/4327665/restrict-the-min-max-zoom-on-a-bing-map-with-v7-of-the-ajax-control](http://stackoverflow.com/questions/4327665/restrict-the-min-max-zoom-on-a-bing-map-with-v7-of-the-ajax-control)
+
+Google Maps
+-------------------
+This example uses the [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial), version 3.
 
 Questions
 ---------
