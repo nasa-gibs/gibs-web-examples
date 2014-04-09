@@ -3,7 +3,8 @@ gibs-web-examples
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for [OpenLayers 2](http://openlayers.org),
-[OpenLayers 3](https://ol3js.org), and [Leaflet](http://leafletjs.com).
+[OpenLayers 3](https://ol3js.org), [Leaflet](http://leafletjs.com),
+and [Bing](http://www.bing.com/maps/)
 
 Live Examples
 -------------
@@ -23,12 +24,14 @@ Live Examples
  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
+* Bing
+ * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
 
 Overview
 --------
 Clone the repository and open the index.html file in your browser.
 
-All examples show a single layer, Corrected Reflectance. Visit the
+All examples show a single layer. Visit the
 [GIBS Available Imagery Products](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products)
 for parameters needed to display other layers.
 
@@ -78,6 +81,15 @@ GIBS now returns error codes if tiles are requested outside the tile matrix boun
 
 See: [https://github.com/kartena/Proj4Leaflet/issues/62](https://github.com/kartena/Proj4Leaflet/issues/62)
 
+Bing
+-----
+This example uses the [Bing AJAX Control](http://msdn.microsoft.com/en-us/library/gg427610.aspx), version 7.
+
+Excessive flickering is visible when using Google Chrome.
+
+There is no straightforward way to restrict the zoom levels. GIBS returns 400 errors when over-zoomed for a layer.
+
+See: [http://stackoverflow.com/questions/4327665/restrict-the-min-max-zoom-on-a-bing-map-with-v7-of-the-ajax-control](http://stackoverflow.com/questions/4327665/restrict-the-min-max-zoom-on-a-bing-map-with-v7-of-the-ajax-control)
 
 Questions
 ---------
