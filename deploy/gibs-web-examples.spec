@@ -1,5 +1,5 @@
 Name:		gibs-web-examples
-Version:	1.1.0
+Version:	1.2.0
 Release:	1%{?dist}
 Summary:	Examples of using GIBS with various web mapping libraries
 
@@ -25,7 +25,7 @@ cp %{SOURCE1} .
 %install
 rm -rf %{buildroot}
 install -m 755 -d %{buildroot}/%{_datadir}/%{name}
-cp -r {openlayers*,leaflet} %{buildroot}/%{_datadir}/%{name}
+cp -r {openlayers*,leaflet,bing,google} %{buildroot}/%{_datadir}/%{name}
 
 install -m 755 -d %{buildroot}/%{_sysconfdir}/httpd/conf.d
 install -m 644 gibs-web-examples.httpd.conf \
@@ -44,6 +44,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Apr 9 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.2.0-1
+- Added examples with Bing and Google Maps
+
 * Fri Apr 4 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.1.0-1
 - Upgraded Leaflet
 - Fixed projection definition in the Arctic
