@@ -24,9 +24,9 @@ Live Examples
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
 * Bing
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
+ * Web Mercator (EPSG:3857): Coming soon.
 * Google Maps
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/google/webmercator-epsg3857.html)
+ * Web Mercator (EPSG:3857): Coming soon.
 
 Overview
 --------
@@ -88,7 +88,7 @@ This example uses the [Bing AJAX Control](http://msdn.microsoft.com/en-us/librar
 
 Excessive flickering is visible when using Google Chrome.
 
-There is no straightforward way to restrict the zoom levels. GIBS returns 400 errors when over-zoomed for a layer.
+There is no straightforward way to restrict the zoom levels. GIBS returns a "Bad Request" response when over-zoomed for a layer.
 
 See: [http://stackoverflow.com/questions/4327665/restrict-the-min-max-zoom-on-a-bing-map-with-v7-of-the-ajax-control](http://stackoverflow.com/questions/4327665/restrict-the-min-max-zoom-on-a-bing-map-with-v7-of-the-ajax-control)
 
