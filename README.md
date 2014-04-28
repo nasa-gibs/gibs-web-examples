@@ -65,6 +65,8 @@ example uses proj4js version 1.1.0. This is not required to simply display the m
 
 The ol.tilegrid.XYZ class is hard-coded to use EPSG:3857 and ol.tilegrid.WMTS must be used for other projections.
 
+See: [https://github.com/openlayers/ol3/pull/1124](https://github.com/openlayers/ol3/pull/1124) for more information.
+
 In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. This requires overriding the tileUrlFunction and adding the parameter to the end of the URL string.
 
 Leaflet
