@@ -18,25 +18,22 @@
  * limitations under the License.
  */
 
-#map {
-    background-color: #000000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.olControlAttribution {
-    padding: 1em;
+#day-label {
+    left: 1em;
     bottom: 1em;
-    right: 1em;
-    background: rgba(40, 40, 40, 0.8);
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 5px;
-    font-size: 16px;
+    color: rgb(200, 200, 200);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5em;
 }
 
-.olControlAttribution a {
-    color: rgb(200, 200, 200);
+#day-panel {
+    position: absolute;
+    width: 10em;
+    left: 1em;
+    bottom: 1em;
+    padding: 1em;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 5px;
+    border: 1px solid rgb(200, 200, 200);
 }
