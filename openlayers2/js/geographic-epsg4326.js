@@ -56,4 +56,3 @@ window.onload = function() {
     map.addLayer(layer);
     map.setCenter([0, 0], 2);
 };
-
