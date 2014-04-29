@@ -38,7 +38,6 @@ window.onload = function() {
         matrixSet: "EPSG4326_250m",
         maxResolution: 0.5625,
         numZoomLevels: 9,
-        attribution: "NASA EOSDIS GIBS",
         tileSize: new OpenLayers.Size(512, 512),
         format: "image/jpeg",
         projection: "EPSG:4326",

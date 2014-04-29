@@ -1,5 +1,4 @@
 .project
 build
 dist
-
-
+node_modules
