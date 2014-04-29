@@ -51,7 +51,7 @@ matrix set name
 
 See the "Rolling Seven Day Slider" examples for more information.
 
-[Worldview](https://earthdata.nasa.gov/worldview) is a web application that
+[Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
 
 OpenLayers 2
