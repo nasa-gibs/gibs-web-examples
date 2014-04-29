@@ -1,5 +1,5 @@
 Name:		gibs-web-examples
-Version:	1.2.0
+Version:	1.3.0
 Release:	1%{?dist}
 Summary:	Examples of using GIBS with various web mapping libraries
 
@@ -44,6 +44,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Apr 29 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.3.0-1
+- Added rolling time slider examples
+
 * Wed Apr 9 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.2.0-1
 - Added examples with Bing and Google Maps
 
