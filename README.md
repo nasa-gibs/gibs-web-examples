@@ -13,16 +13,19 @@ Live Examples
  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/arctic-epsg3413.html)
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/webmercator-epsg3857.html)
+ * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/time.html)
 * OpenLayers 3
  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/geographic-epsg4326.html)
  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/arctic-epsg3413.html)
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/webmercator-epsg3857.html)
+ * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/time.html)
 * Leaflet
  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
+ * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/time.html)
 * Bing
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
 * Google Maps
@@ -36,10 +39,15 @@ All examples show a single layer. Visit the
 [GIBS Available Imagery Products](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products)
 for parameters needed to display other layers.
 
-All examples use a single day. To select a specifc day:
+The [WMTS](http://www.opengeospatial.org/standards/wmts) standard does not
+provide a way to select a specific time or date for a layer. GIBS has
+implemented this feature in the following way:
 
-* WMTS KVP: Use the TIME parameter to select a day in YYYY-MM-DD format.
-* WMTS REST: Add the day in YYYY-MM-DD format between style name and the tlie matrix set name
+* WMTS KVP: Use the `TIME` parameter to select a day in `YYYY-MM-DD` format.
+* WMTS REST: Add the day in `YYYY-MM-DD` format between style name and the tile
+matrix set name
+
+See the "Rolling Seven Day Slider" examples for more information.
 
 [Worldview](https://earthdata.nasa.gov/worldview) is a web application that
 uses GIBS as its primary image source.
