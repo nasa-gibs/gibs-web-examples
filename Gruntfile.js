@@ -53,7 +53,7 @@
         clean: {
             all: ["build", "dist"]
         }
-        
+
     });
 
     grunt.loadNpmTasks("grunt-contrib-clean");
