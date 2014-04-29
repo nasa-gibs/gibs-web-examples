@@ -49,9 +49,9 @@ window.onload = function() {
         projection: "EPSG:3413",
         attribution:
             "<a href='http://openlayers.org'>" +
-            "OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
+            "OpenLayers</a>" +
             "<a href='https://earthdata.nasa.gov/gibs'>" +
-            "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
+            "NASA EOSDIS GIBS</a>" +
             "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers2/js/arctic-epsg3413.js'>" +
             "View Source" +
             "</a>"

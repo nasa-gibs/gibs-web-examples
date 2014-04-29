@@ -27,6 +27,15 @@
     height: 100%;
 }
 
+.ol-zoom button {
+    background: rgba(40, 40, 40, 0.8);
+}
+
+.ol-zoom button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(40, 40, 40);
+}
+
 .ol-attribution {
     padding: 1em;
     bottom: 1em;
@@ -37,7 +46,8 @@
 }
 
 .ol-attribution a {
-    font-size: 16px;
+    padding: 0 0.75em;
+    font: 400 14px "helvetica",sans-serif;
     text-decoration: underline;
     color: rgb(200, 200, 200);
 }
