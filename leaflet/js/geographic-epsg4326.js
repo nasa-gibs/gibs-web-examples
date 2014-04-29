@@ -81,4 +81,3 @@ window.onload = function() {
 
     map.addLayer(layer);
 };
-
