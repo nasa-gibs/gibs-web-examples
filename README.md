@@ -1,6 +1,8 @@
 gibs-web-examples
 =================
 
+[![Build Status](https://travis-ci.org/nasa-gibs/gibs-web-examples.svg?branch=master)](https://travis-ci.org/nasa-gibs/gibs-web-examples)
+
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for [OpenLayers 2](http://openlayers.org),
 [OpenLayers 3](https://ol3js.org), [Leaflet](http://leafletjs.com), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
