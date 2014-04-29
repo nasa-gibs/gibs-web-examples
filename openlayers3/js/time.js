@@ -38,10 +38,17 @@ $(function() {
         return day.toISOString().split("T")[0];
     };
 
-    var map = new OpenLayers.Map({
-        div: "map",
-        projection: "EPSG:4326",
-        numZoomLevels: 9,
+    var map = new ol.Map({
+        view: new ol.View2D({
+            maxResolution: 0.5625,
+            projection: ol.proj.get("EPSG:4326"),
+            extent: [-180, -90, 180, 90],
+            center: [0, 0],
+            zoom: 2,
+            maxZoom: 8
+        }),
+        target: "map",
+        renderer: ["canvas", "dom"],
     });
 
     var update = function() {
@@ -70,45 +77,64 @@ $(function() {
     var clearLayers = function() {
         // Get a copy of the current layer list and then remove each
         // layer.
-        var activeLayers = map.layers.slice(0);
+        var activeLayers = map.getLayers().getArray();
         for ( var i = 0; i < activeLayers.length; i++ ) {
             map.removeLayer(activeLayers[i]);
         }
     };
 
     var createLayer = function() {
-        layer = new OpenLayers.Layer.WMTS({
-            name: "Terra / MODIS Corrected Reflectance (True Color)",
-            url: [
+        var source = new ol.source.WMTS({
+            urls: [
                 "https://map1a.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
                 "https://map1b.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
-                "https://map1c.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi"
+                "https://map1c.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
             ],
             layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
-            style: "",
-            matrixSet: "EPSG4326_250m",
-            maxResolution: 0.5625,
-            numZoomLevels: 9,
-            attribution: "NASA EOSDIS GIBS",
-            tileSize: new OpenLayers.Size(512, 512),
             format: "image/jpeg",
-            projection: "EPSG:4326",
-            attribution:
-                "<a href='http://openlayers.org'>" +
-                "OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
-                "<a href='https://earthdata.nasa.gov/gibs'>" +
-                "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
-                "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers2/js/time.js'>" +
-                "View Source" +
-                "</a>"
+            matrixSet: "EPSG4326_250m",
+            tileGrid: new ol.tilegrid.WMTS({
+                origin: [-180, 90],
+                resolutions: [
+                    0.5625,
+                    0.28125,
+                    0.140625,
+                    0.0703125,
+                    0.03515625,
+                    0.017578125,
+                    0.0087890625,
+                    0.00439453125,
+                    0.002197265625
+                ],
+                matrixIds: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                tileSize: 512
+            }),
+            attributions: [
+                new ol.Attribution({html:
+                    "<a href='http://ol3js.org'>OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
+                    "<a href='https://earthdata.nasa.gov/gibs'>" +
+                    "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
+                    "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers3/js/time.js'>" +
+                    "View Source" +
+                    "</a>"
+                })
+            ]
         });
-        layer.mergeNewParams({time: dayParameter()});
 
+        // There is no way to add additional parameters into the WMTS call as
+        // was possible in OpenLayers 2. Override the tileUrlFunction and add
+        // the time parameter to the end.
+        var superTileUrlFunction = source.tileUrlFunction;
+        source.tileUrlFunction = function() {
+            var url = superTileUrlFunction.apply(source, arguments);
+            if ( url ) { return url + "&TIME=" + dayParameter(); }
+        };
+
+        var layer = new ol.layer.Tile({source: source});
         return layer;
     };
 
     update();
-    map.setCenter([0, 0], 2);
 
     // Slider values are in "days from present".
     $("#day-slider").slider({
