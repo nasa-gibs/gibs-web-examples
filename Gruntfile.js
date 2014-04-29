@@ -48,7 +48,12 @@
                     "!node_modules/**/*.css"
                 ]
             }
+        },
+
+        clean: {
+            all: ["build", "dist"]
         }
+        
     });
 
     grunt.loadNpmTasks("grunt-contrib-clean");
