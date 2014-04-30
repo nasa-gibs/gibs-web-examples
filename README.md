@@ -67,7 +67,7 @@ example uses proj4js version 1.1.0. This is not required to simply display the m
 
 OpenLayers 3
 --------------------
-This example uses [OpenLayers 3](http://ol3js.org/) version 0.3.0.beta.3.
+This example uses [OpenLayers 3](http://ol3js.org/) version 3.0.0.beta.3.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
