@@ -26,7 +26,7 @@ window.onload = function() {
         "+datum=WGS84 +units=m +no_defs";
 
     var map = new ol.Map({
-        view: new ol.View2D({
+        view: new ol.View({
             maxResolution: 8192.0,
             projection: ol.proj.get("EPSG:3031"),
             extent: [-4194304, -4194304, 4194304, 4194304],
