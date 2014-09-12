@@ -54,7 +54,7 @@ uses GIBS as its primary image source.
 
 ## OpenLayers
 
-This example uses [OpenLayers 3](http://openlayers.org/) version 3.0.0.
+This example uses [OpenLayers](http://openlayers.org/) version 3.0.0.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
