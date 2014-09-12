@@ -21,7 +21,7 @@
 window.onload = function() {
 
     var map = new ol.Map({
-        view: new ol.View2D({
+        view: new ol.View({
             maxResolution: 0.5625,
             projection: ol.proj.get("EPSG:4326"),
             extent: [-180, -90, 180, 90],

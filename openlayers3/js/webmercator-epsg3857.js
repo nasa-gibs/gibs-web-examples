@@ -21,7 +21,7 @@
 window.onload = function() {
 
     var map = new ol.Map({
-        view: new ol.View2D({
+        view: new ol.View({
             extent: [-20037508.34, -20037508.34, 20037508.34, 20037508.34],
             center: [0, 0],
             zoom: 3,
@@ -47,7 +47,7 @@ window.onload = function() {
         ],
         attributions: [
             new ol.Attribution({html:
-                "<a href='http://ol3js.org'>OpenLayers</a>&nbsp;&nbsp;&nbsp;" + 
+                "<a href='http://ol3js.org'>OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
                 "<a href='https://earthdata.nasa.gov/gibs'>" +
                 "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
                 "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers3/js/webmercator-epsg3857.js'>" +
