@@ -37,26 +37,28 @@
 }
 
 .ol-attribution {
+    display: none;
+}
+
+#attribution {
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
     padding: 1em;
     bottom: 1em;
     right: 1em;
     background: rgba(40, 40, 40, 0.8);
     border: 1px solid rgb(200, 200, 200);
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.ol-attribution a {
-    padding: 0 0.75em;
+#attribution a {
     font: 400 14px "helvetica",sans-serif;
-    text-decoration: underline;
+    padding: 0 0.75em;
     color: rgb(200, 200, 200);
 }
 
-.ol-attribution a:hover {
+#attribution a:hover {
     color: rgb(255, 255, 255);
-}
-
-/* Link provided in the attribution */
-.ol-logo {
-    display: none;
 }

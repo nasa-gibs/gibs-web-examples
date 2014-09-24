@@ -30,9 +30,34 @@ window.onload = function() {
             maxZoom: 8
         }),
         target: "map",
-        renderer: ["canvas", "dom"],
+        //renderer: ["canvas", "dom"],
+        renderer: ["dom"]
     });
 
+    var source = new ol.source.XYZ({
+        projection: ol.proj.get("EPSG:4326"),
+        url:
+            "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/" +
+            "MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/" +
+            "EPSG4326_250m/{z}/{y}/{x}.jpg",
+        tileGrid: new ol.tilegrid.XYZ({
+            origin: [-180, 90],
+            resolutions: [
+                0.5625,
+                0.28125,
+                0.140625,
+                0.0703125,
+                0.03515625,
+                0.017578125,
+                0.0087890625,
+                0.00439453125,
+                0.002197265625
+            ],
+            tileSize: 512
+        })
+    });
+
+    /*
     var source = new ol.source.WMTS({
         urls: [
             "https://map1a.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
@@ -57,29 +82,24 @@ window.onload = function() {
             ],
             matrixIds: [0, 1, 2, 3, 4, 5, 6, 7, 8],
             tileSize: 512
-        }),
-        attributions: [
-            new ol.Attribution({html:
-                "<a href='http://ol3js.org'>OpenLayers</a>" +
-                "<a href='https://earthdata.nasa.gov/gibs'>" +
-                "NASA EOSDIS GIBS</a>" +
-                "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers3/js/geographic-epsg4326.js'>" +
-                "View Source" +
-                "</a>"
-            })
-        ]
+        })
     });
-
+    */
     // There is no way to add additional parameters into the WMTS call as
     // was possible in OpenLayers 2. Override the tileUrlFunction and add
     // the time parameter to the end.
+    /*
     var superTileUrlFunction = source.tileUrlFunction;
     source.tileUrlFunction = function() {
         var url = superTileUrlFunction.apply(source, arguments);
         if ( url ) { return url + "&TIME=2013-06-15"; }
     };
+    */
 
-    var layer = new ol.layer.Tile({source: source});
+    var layer = new ol.layer.Tile({
+        maxResolution: 0.5625,
+        source: source
+    });
 
     map.addLayer(layer);
 };

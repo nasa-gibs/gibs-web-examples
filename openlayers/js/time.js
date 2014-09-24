@@ -108,17 +108,7 @@ $(function() {
                 ],
                 matrixIds: [0, 1, 2, 3, 4, 5, 6, 7, 8],
                 tileSize: 512
-            }),
-            attributions: [
-                new ol.Attribution({html:
-                    "<a href='http://ol3js.org'>OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
-                    "<a href='https://earthdata.nasa.gov/gibs'>" +
-                    "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
-                    "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers3/js/time.js'>" +
-                    "View Source" +
-                    "</a>"
-                })
-            ]
+            })
         });
 
         // There is no way to add additional parameters into the WMTS call as

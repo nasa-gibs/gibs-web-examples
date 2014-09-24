@@ -44,16 +44,6 @@ window.onload = function() {
             "https://map1c.vis.earthdata.nasa.gov/wmts-webmerc/" +
             "MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/" +
             "GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
-        ],
-        attributions: [
-            new ol.Attribution({html:
-                "<a href='http://ol3js.org'>OpenLayers</a>&nbsp;&nbsp;&nbsp;" +
-                "<a href='https://earthdata.nasa.gov/gibs'>" +
-                "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
-                "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers3/js/webmercator-epsg3857.js'>" +
-                "View Source" +
-                "</a>"
-            })
         ]
     });
 
