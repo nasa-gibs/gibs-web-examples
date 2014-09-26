@@ -43,6 +43,21 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/httpd/conf.d/gibs-web-examples.conf
 
 
+%post
+if [ $1 -gt 0 ] ; then
+   if /sbin/service httpd status >/dev/null ; then
+      /sbin/service httpd reload
+   fi
+fi
+
+%postun
+if [ $1 -eq 0 ] ; then
+   if /sbin/service httpd status >/dev/null ; then
+       /sbin/service httpd reload
+   fi
+fi
+
+
 %changelog
 * Fri Sep 26 2014 Mike McGann <mike.mcgann@nasa.gov> - 2.0.0-1
 - Upgraded OpenLayers 3 to release version
