@@ -1,5 +1,5 @@
 Name:		gibs-web-examples
-Version:	1.3.0
+Version:	2.0.0
 Release:	1%{?dist}
 Summary:	Examples of using GIBS with various web mapping libraries
 
@@ -44,6 +44,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Sep 26 2014 Mike McGann <mike.mcgann@nasa.gov> - 2.0.0-1
+- Upgraded OpenLayers 3 to release version
+- Upgraded Leaflet to 0.7.3
+
 * Tue Apr 29 2014 Mike McGann <mike.mcgann@nasa.gov> - 1.3.0-1
 - Added rolling time slider examples
 
