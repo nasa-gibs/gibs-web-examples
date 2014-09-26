@@ -66,7 +66,6 @@ window.onload = function() {
     };
 
     var layer = new ol.layer.Tile({
-        maxResolution: 0.5625,
         source: source
     });
 

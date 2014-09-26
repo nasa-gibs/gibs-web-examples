@@ -4,7 +4,7 @@
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for
-[OpenLayers](https://ol3js.org), [Leaflet](http://leafletjs.com), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
+[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
 
 ## Live Examples
 
@@ -48,6 +48,9 @@ implemented this feature in the following way:
 matrix set name
 
 See the "Rolling Seven Day Slider" examples for more information.
+
+The Web Mercator endpoints return a blank map at zoom level zero due to a bug
+in the tiling software. This issue will be fixed sometime in the future. 
 
 [Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
