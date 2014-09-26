@@ -60,6 +60,8 @@ If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
 example uses proj4js version 1.1.0. This is not required to simply display the map.
 
+As of this verison of OpenLayers, the canvas renderer does not work when using ol.source.XYZ with a tile size that is not 256. In this case, use ol.tilegrid.WMTS instead. 
+
 In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. This requires overriding the tileUrlFunction and adding the parameter to the end of the URL string.
 
 ## Leaflet

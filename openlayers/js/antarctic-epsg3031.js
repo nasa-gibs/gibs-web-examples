@@ -39,11 +39,7 @@ window.onload = function() {
     });
 
     var source = new ol.source.WMTS({
-        urls: [
-            "https://map1a.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi",
-            "https://map1b.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi",
-            "https://map1c.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi",
-        ],
+        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi",
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         extent: [-4194304, -4194304, 4194304, 4194304],
         format: "image/jpeg",
