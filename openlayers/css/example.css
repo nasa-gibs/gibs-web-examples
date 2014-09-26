@@ -42,11 +42,9 @@
 
 #attribution {
     position: absolute;
-    bottom: 5em;
-    right: 5em;
-    padding: 1em;
     bottom: 1em;
     right: 1em;
+    padding: 1em;
     background: rgba(40, 40, 40, 0.8);
     border: 1px solid rgb(200, 200, 200);
     border-radius: 5px;

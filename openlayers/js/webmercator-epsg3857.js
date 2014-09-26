@@ -32,19 +32,9 @@ window.onload = function() {
     });
 
     var source = new ol.source.XYZ({
-        urls: [
-            "https://map1a.vis.earthdata.nasa.gov/wmts-webmerc/" +
-            "MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/" +
-            "GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
-
-            "https://map1b.vis.earthdata.nasa.gov/wmts-webmerc/" +
-            "MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/" +
-            "GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
-
-            "https://map1c.vis.earthdata.nasa.gov/wmts-webmerc/" +
+        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-webmerc/" +
             "MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/" +
             "GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
-        ]
     });
 
     var layer = new ol.layer.Tile({source: source});
