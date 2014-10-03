@@ -34,14 +34,38 @@
             console: [
                 "**/js/*.js",
                 "!node_modules/**/*.js"
-            ]
+            ],
+            report: {
+                options: {
+                    reporter: "checkstyle",
+                },
+                files: {
+                    src: [
+                        "web/js/**/wv.*.js",
+                        "test/**/*.js",
+                    ]
+                }
+            }
         },
 
         csslint: {
-            main: {
+            console: {
                 options: {
                     ids: false,
                     "fallback-colors": false
+                },
+                src: [
+                    "**/css/*.css",
+                    "!node_modules/**/*.css"
+                ]
+            },
+            report: {
+                options: {
+                    ids: false,
+                    "fallback-colors": false,
+                    formatters: [
+                        { id: "checkstyle-xml", dest: "build/csslint-results.xml" }
+                    ]
                 },
                 src: [
                     "**/css/*.css",
@@ -64,7 +88,7 @@
 
     grunt.task.run("git-rev-parse");
 
-    grunt.registerTask("default", ["jshint", "csslint"]);
+    grunt.registerTask("default", ["jshint:console", "csslint:console"]);
     grunt.registerTask("lint", ["default"]);
 
 };
