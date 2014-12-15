@@ -4,7 +4,7 @@
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for
-[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
+[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Cesium](http://cesiumjs.org/), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
 
 ## Live Examples
 
@@ -20,6 +20,10 @@ source for
  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/time.html)
+* Cesium
+ * [Single Day, Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/webmercator-epsg3857.html)
+ * [Time Slider](https://earthdata.nasa.gov/labs/gibs/examples/cesium/time.js)
+ * [Lighting and Terrain](https://earthdata.nasa.gov/labs/gibs/examples/cesium/terrain.js)
 * Bing
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
 * Google Maps
@@ -50,7 +54,7 @@ matrix set name
 See the "Rolling Seven Day Slider" examples for more information.
 
 The Web Mercator endpoints return a blank map at zoom level zero due to a bug
-in the tiling software. This issue will be fixed sometime in the future. 
+in the tiling software. This issue will be fixed sometime in the future.
 
 [Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
@@ -82,6 +86,15 @@ GIBS now returns error codes if tiles are requested outside the tile matrix boun
 
 See: [https://github.com/kartena/Proj4Leaflet/issues/62](https://github.com/kartena/Proj4Leaflet/issues/62)
 
+## Cesium
+
+This example uses [Cesium](http://cesiumjs.org/) version 1.4.
+
+All examples use the Web Mercator GIBS service. The `GeographicTilingScheme`
+class does not provide an easy way to represent irregular tile matrix sets. Code to handle the Geographic endpoint may be provided in the future.
+
+The lighting and terrain example uses the [STK World Terrain](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) data set.  
+ 
 ## Bing
 
 This example uses the [Bing AJAX Control](http://msdn.microsoft.com/en-us/library/gg427610.aspx), version 7.
