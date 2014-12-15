@@ -34,7 +34,7 @@ window.onload = function() {
     });
 
     var source = new ol.source.WMTS({
-        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
+        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=2013-06-16",
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         format: "image/jpeg",
         matrixSet: "EPSG4326_250m",
@@ -55,15 +55,6 @@ window.onload = function() {
             tileSize: 512
         })
     });
-
-    // There is no way to add additional parameters into the WMTS call as
-    // was possible in OpenLayers 2. Override the tileUrlFunction and add
-    // the time parameter to the end.
-    var superTileUrlFunction = source.tileUrlFunction;
-    source.tileUrlFunction = function() {
-        var url = superTileUrlFunction.apply(source, arguments);
-        if ( url ) { return url + "&TIME=2013-06-15"; }
-    };
 
     var layer = new ol.layer.Tile({
         source: source
