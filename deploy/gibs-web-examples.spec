@@ -25,7 +25,7 @@ cp %{SOURCE1} .
 %install
 rm -rf %{buildroot}
 install -m 755 -d %{buildroot}/%{_datadir}/%{name}
-cp -r {openlayers*,leaflet,bing,google} %{buildroot}/%{_datadir}/%{name}
+cp -r {openlayers*,leaflet,cesium,bing,google} %{buildroot}/%{_datadir}/%{name}
 
 install -m 755 -d %{buildroot}/%{_sysconfdir}/httpd/conf.d
 install -m 644 gibs-web-examples.httpd.conf \
