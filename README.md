@@ -67,9 +67,10 @@ If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
 example uses proj4js version 1.1.0. This is not required to simply display the map.
 
-As of this verison of OpenLayers, the canvas renderer does not work when using ol.source.XYZ with a tile size that is not 256. In this case, use ol.tilegrid.WMTS instead.
+As of this version of OpenLayers, the canvas renderer does not work when using ol.source.XYZ with a tile size that is not 256. In this case, use ol.tilegrid.WMTS instead.
 
-In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. This requires overriding the tileUrlFunction and adding the parameter to the end of the URL string.
+In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the
+base URL string.
 
 ## Leaflet
 
@@ -94,7 +95,7 @@ All examples use the Web Mercator GIBS service. The `GeographicTilingScheme`
 class does not provide an easy way to represent irregular tile matrix sets. Code to handle the Geographic endpoint may be provided in the future.
 
 The lighting and terrain example uses the [STK World Terrain](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) data set.  
- 
+
 ## Bing
 
 This example uses the [Bing AJAX Control](http://msdn.microsoft.com/en-us/library/gg427610.aspx), version 7.

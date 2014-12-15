@@ -85,7 +85,7 @@ $(function() {
 
     var createLayer = function() {
         var source = new ol.source.WMTS({
-            url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
+            url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=" + dayParameter(),
             layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
             format: "image/jpeg",
             matrixSet: "EPSG4326_250m",
@@ -106,15 +106,6 @@ $(function() {
                 tileSize: 512
             })
         });
-
-        // There is no way to add additional parameters into the WMTS call as
-        // was possible in OpenLayers 2. Override the tileUrlFunction and add
-        // the time parameter to the end.
-        var superTileUrlFunction = source.tileUrlFunction;
-        source.tileUrlFunction = function() {
-            var url = superTileUrlFunction.apply(source, arguments);
-            if ( url ) { return url + "&TIME=" + dayParameter(); }
-        };
 
         var layer = new ol.layer.Tile({source: source});
         return layer;
