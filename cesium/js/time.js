@@ -23,9 +23,11 @@ window.onload = function() {
     // Initially start at June 15, 2014
     var initialTime = Cesium.JulianDate.fromDate(
             new Date(Date.UTC(2014, 5, 15)));
+
     // Earliest date of Corrected Reflectance in archive: May 8, 2013
     var startTime = Cesium.JulianDate.fromDate(
             new Date(Date.UTC(2013, 4, 8)));
+
     var endTime = Cesium.JulianDate.now();
 
     var clock = new Cesium.Clock({
