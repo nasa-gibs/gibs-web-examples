@@ -46,6 +46,7 @@ window.onload = function() {
     var map = L.map("map", {
         center: [0, 0],
         zoom: 2,
+        maxZoom: 8,
         crs: EPSG4326,
         maxBounds: [
             [-120, -220],
