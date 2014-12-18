@@ -22,8 +22,8 @@ source for
  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/time.html)
 * Cesium
  * [Single Day, Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/webmercator-epsg3857.html)
- * [Time Slider](https://earthdata.nasa.gov/labs/gibs/examples/cesium/time.js)
- * [Lighting and Terrain](https://earthdata.nasa.gov/labs/gibs/examples/cesium/terrain.js)
+ * [Time Slider](https://earthdata.nasa.gov/labs/gibs/examples/cesium/time.html)
+ * [Lighting and Terrain](https://earthdata.nasa.gov/labs/gibs/examples/cesium/terrain.html)
 * Bing
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
 * Google Maps
