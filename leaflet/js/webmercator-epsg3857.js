@@ -31,7 +31,7 @@ window.onload = function() {
     });
 
     var template =
-        "https://map1{s}.vis.earthdata.nasa.gov/wmts-webmerc/" +
+        "//map1{s}.vis.earthdata.nasa.gov/wmts-webmerc/" +
         "{layer}/default/{time}/{tileMatrixSet}/{z}/{y}/{x}.jpg";
 
     var layer = L.tileLayer(template, {
@@ -59,4 +59,3 @@ window.onload = function() {
 
     map.addLayer(layer);
 };
-

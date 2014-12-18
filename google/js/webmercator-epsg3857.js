@@ -29,7 +29,7 @@ window.onload = function() {
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     var getTileUrl = function(tile, zoom) {
-        return "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/" +
+        return "//map1.vis.earthdata.nasa.gov/wmts-webmerc/" +
                "MODIS_Terra_Aerosol/default/2013-12-02/" +
                "GoogleMapsCompatible_Level6/" +
                 zoom + "/" + tile.y + "/" +

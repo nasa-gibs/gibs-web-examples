@@ -29,9 +29,9 @@ window.onload = function() {
     var layer = new OpenLayers.Layer.WMTS({
         name: "Terra / MODIS Corrected Reflectance (True Color)",
         url: [
-            "https://map1a.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
-            "https://map1b.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
-            "https://map1c.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi"
+            "//map1a.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
+            "//map1b.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi",
+            "//map1c.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi"
         ],
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         style: "",

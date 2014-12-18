@@ -22,7 +22,7 @@ window.onload = function() {
 
     // Day of the imagery to display is appended to the imagery provider URL
     var provider = new Cesium.WebMapTileServiceImageryProvider({
-        url: "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/wmts.cgi?TIME=2013-06-15",
+        url: "//map1.vis.earthdata.nasa.gov/wmts-webmerc/wmts.cgi?TIME=2013-06-15",
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         style: "",
         format: "image/jpeg",

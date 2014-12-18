@@ -32,7 +32,7 @@ window.onload = function() {
     });
 
     var source = new ol.source.XYZ({
-        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-webmerc/" +
+        url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-webmerc/" +
             "MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/" +
             "GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
     });
