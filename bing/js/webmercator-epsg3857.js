@@ -31,7 +31,7 @@ window.onload = function() {
     });
 
     var uriConstructor = function(tile) {
-        return "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/" +
+        return "//map1.vis.earthdata.nasa.gov/wmts-webmerc/" +
                 "MODIS_Terra_Aerosol/default/2013-12-02/" +
                 "GoogleMapsCompatible_Level6/" +
                 tile.levelOfDetail + "/" + tile.y + "/" + tile.x + ".png";

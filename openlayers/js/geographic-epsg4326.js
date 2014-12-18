@@ -34,7 +34,7 @@ window.onload = function() {
     });
 
     var source = new ol.source.WMTS({
-        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=2013-06-16",
+        url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=2013-06-16",
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         format: "image/jpeg",
         matrixSet: "EPSG4326_250m",

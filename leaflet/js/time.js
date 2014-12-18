@@ -105,7 +105,7 @@ $(function() {
     };
 
     var template =
-        "https://map1{s}.vis.earthdata.nasa.gov/wmts-geo/" +
+        "//map1{s}.vis.earthdata.nasa.gov/wmts-geo/" +
         "{layer}/default/{time}/{tileMatrixSet}/{z}/{y}/{x}.jpg";
 
     var createLayer = function() {
