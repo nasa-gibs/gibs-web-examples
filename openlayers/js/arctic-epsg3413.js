@@ -20,10 +20,10 @@
 
 window.onload = function() {
 
-    Proj4js.defs["EPSG:3413"] =
-        "+title=WGS 84 / NSIDC Sea Ice Polar Stereographic North " +
+    proj4.defs("EPSG:3413",
         "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +k=1 +x_0=0 +y_0=0 " +
-        "+datum=WGS84 +units=m +no_defs";
+        "+datum=WGS84 +units=m +no_defs");
+    ol.proj.get("EPSG:3413").setExtent([-4194304, -4194304, 4194304, 4194304]);
 
     var map = new ol.Map({
         view: new ol.View({

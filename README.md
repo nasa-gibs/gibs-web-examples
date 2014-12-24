@@ -61,11 +61,11 @@ uses GIBS as its primary image source.
 
 ## OpenLayers
 
-This example uses [OpenLayers](http://openlayers.org/) version 3.0.0.
+This example uses [OpenLayers](http://openlayers.org/) version 3.1.1.
 
 If geometry transformations are required using coordinates in the polar systems,
-[proj4js](http://trac.osgeo.org/proj4js), version 1, must be included. This
-example uses proj4js version 1.1.0. This is not required to simply display the map.
+[proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
+example uses proj4js version 2.3.3. This is not required to simply display the map.
 
 As of this version of OpenLayers, the canvas renderer does not work when using ol.source.XYZ with a tile size that is not 256. In this case, use ol.tilegrid.WMTS instead.
 
