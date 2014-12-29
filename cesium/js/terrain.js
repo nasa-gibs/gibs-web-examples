@@ -24,9 +24,9 @@ window.onload = function() {
     var initialTime = Cesium.JulianDate.fromDate(
             new Date(Date.UTC(2014, 5, 15)));
 
-    // Earliest date of Corrected Reflectance in archive: May 8, 2013
+    // Earliest date of Corrected Reflectance in archive: May 8, 2012
     var startTime = Cesium.JulianDate.fromDate(
-            new Date(Date.UTC(2013, 4, 8)));
+            new Date(Date.UTC(2012, 4, 8)));
 
     var endTime = Cesium.JulianDate.now();
 
@@ -79,8 +79,9 @@ window.onload = function() {
     viewer.timeline.zoomTo(startTime, endTime);
 
     // When the clock changes, check to see if the day has changed and
-    // replace the current layer with a new one.
-    var onClockUpdate = function() {
+    // replace the current layer with a new one. Don't do this check more
+    // than once per second.
+    var onClockUpdate = _.throttle(function() {
         var isoDateTime = clock.currentTime.toString();
         var time = isoDate(isoDateTime);
         if ( time !== previousTime ) {
@@ -91,7 +92,7 @@ window.onload = function() {
             dailyLayer = viewer.scene.imageryLayers.addImageryProvider(
                 createDailyProvider());
         }
-    };
+    }, 1000);
 
     viewer.clock.onTick.addEventListener(onClockUpdate);
     onClockUpdate();
