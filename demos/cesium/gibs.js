@@ -111,9 +111,7 @@ gibs.GeographicTilingScheme = function(options) {
     return self;
 };
 
-gibs.ClockModel = function(viewer) {
-
-    var self = {};
+gibs.Viewer = function(config) {
 
     // Initially start at June 15, 2014
     var initialTime = Cesium.JulianDate.fromDate(
@@ -125,23 +123,15 @@ gibs.ClockModel = function(viewer) {
 
     var endTime = Cesium.JulianDate.now();
 
+    // Keep track of the previous day. Only update the layer on a tick if the
+    // day has actually changed.
+    var previousTime = null;
+    var selectedSet = null;
+
     var clock = new Cesium.Clock({
         currentTime: initialTime,
         multiplier: 0   // Don't start animation by default
     });
-
-    // Keep track of the previous day. Only update the layer on a tick if the
-    // day has actually changed.
-    var previousTime = null;
-
-    // Current layer being shown
-    var dailyProvider = null;
-
-    var init = function() {
-        viewer.timeline.zoomTo(startTime, endTime);
-        viewer.clock.onTick.addEventListener(onClockUpdate);
-        onClockUpdate();
-    };
 
     // GIBS needs the day as a string parameter in the form of YYYY-MM-DD.
     // Date.toISOString returns YYYY-MM-DDTHH:MM:SSZ. Split at the "T" and
@@ -151,18 +141,22 @@ gibs.ClockModel = function(viewer) {
     };
 
     // Create the layer for the current day
-    var createDailyProvider = function() {
-        var isoDateTime = clock.currentTime.toString();
-        var time = "TIME=" + isoDate(isoDateTime);
+    var createProvider = function(layer_id) {
+        var layer = config.layers[layer_id];
+        var time = "";
 
-        // Day of the imagery to display is appended to the imagery
-        // provider URL
+        if ( layer.startDate ) {
+            var isoDateTime = clock.currentTime.toString();
+            time = "?TIME=" + isoDate(isoDateTime);
+        }
+
         var provider = new Cesium.WebMapTileServiceImageryProvider({
-            url: "//map1.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?" + time,
-            layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
+            url: "//map1.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi" + time,
+            layer: layer.id,
             style: "",
-            format: "image/jpeg",
-            tileMatrixSetID: "EPSG4326_250m",
+            format: layer.format,
+            tileMatrixSetID:
+                config.resolutions[layer.resolution].tileMatrixSetID,
             minimumLevel: 0,
             maximumLevel: 8,
             tileWidth: 512,
@@ -173,22 +167,56 @@ gibs.ClockModel = function(viewer) {
         return provider;
     };
 
+    // Invoked when the current day changes, but do not call this too often
+    // if the user is sweeping through days.
+    var updateLayers = _.throttle(function() {
+        var isoDateTime = clock.currentTime.toString();
+        var time = isoDate(isoDateTime);
+        var layers = viewer.scene.imageryLayers;
+        layers.removeAll();
+        _.each(selectedSet.layers, function(layer_id) {
+            layers.addImageryProvider(createProvider(layer_id));
+        });
+    }, 250, {leading: true, trailing: true});;
+
     // When the clock changes, check to see if the day has changed and
-    // replace the current layer with a new one. Don't do this check
-    // more than once a second.
-    var onClockUpdate = _.throttle(function() {
+    // replace the current layers/
+    var onClockUpdate = function() {
         var isoDateTime = clock.currentTime.toString();
         var time = isoDate(isoDateTime);
         if ( time !== previousTime ) {
             previousTime = time;
-            if ( dailyProvider ) {
-                viewer.scene.imageryLayers.remove(dailyLayer);
-            }
-            dailyLayer = viewer.scene.imageryLayers.addImageryProvider(
-                    createDailyProvider());
+            updateLayers();
         }
-    }, 1000);
+    };
 
-    return self;
+    var models = [];
+    _.each(config.sets, function(set) {
+        var model = new Cesium.ProviderViewModel({
+            name: set.name,
+            tooltip: "Hello",
+            iconUrl: "foo.png",
+            creationFunction: function() {
+                // Return an empty set and update the layers in the same
+                // way done when the clock changes.
+                selectedSet = set;
+                _.defer(updateLayers);
+                return [];
+            }
+        });
+        models.push(model);
+    });
+
+    var viewer = new Cesium.Viewer("map", {
+        clock: clock,
+        imageryProviderViewModels: models
+    });
+
+
+    viewer.timeline.zoomTo(startTime, endTime);
+    viewer.clock.onTick.addEventListener(onClockUpdate);
+    onClockUpdate();
+
+    return viewer;
 };
 
