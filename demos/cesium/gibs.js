@@ -203,6 +203,25 @@ gibs.Viewer = function(config) {
         _.each(selectedSet.layers, function(layer_id) {
             layers.addImageryProvider(createProvider(layer_id));
         });
+
+        var legend = selectedSet.legend;
+        if ( !legend ) {
+            $("#legend").hide();
+        } else if ( legend.type === "scale" ) {
+            $(".legend-title").html(legend.title);
+            $(".legend-colorbar").attr("src", legend.colorbar);
+            $(".legend-max").html(legend.max);
+            $(".legend-min").html(legend.min);
+            $("#legend .single").hide();
+            $("#legend .scale").show();
+            $("#legend").show();
+        } else {
+            $(".legend-title").html(legend.title);
+            $(".legend-color").css("background-color", legend.color);
+            $("#legend .scale").hide();
+            $("#legend .single").show();
+            $("#legend").show();
+        }
     }, 250, {leading: true, trailing: true});;
 
     // When the clock changes, check to see if the day has changed and
@@ -253,9 +272,6 @@ gibs.Viewer = function(config) {
         // For earlier hours when data is still being filled in, force a far eastern perspective
         if (curHour < 3) {
             curHour = 23;
-        }
-        else if (curHour < 9) {
-            curHour = 0;
         }
 
         // Compute east/west bounds

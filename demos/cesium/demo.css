@@ -33,7 +33,7 @@ html, body {
     height: 100%;
 }
 
-#attribution {
+#info {
     position: absolute;
     bottom: 3em;
     right: 1em;
@@ -42,14 +42,45 @@ html, body {
     border: 1px solid rgb(200, 200, 200);
     border-radius: 5px;
     font-size: 16px;
+    color: rgb(200, 200, 200);
 }
 
-#attribution a {
+#info a {
     font: 400 14px "helvetica",sans-serif;
     padding: 0 0.75em;
     color: rgb(200, 200, 200);
 }
 
-#attribution a:hover {
+#info a:hover {
     color: rgb(255, 255, 255);
+}
+
+#legend {
+    display: none;
+    padding: 0 0 10px 7px;
+    font: 100 13px/13px "Lucida Sans",Arial,Sans-Serif;
+}
+
+.legend-title {
+    font-size: 13px;
+}
+
+.legend-colorbar {
+    width: 137px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.legend-ranges {
+    width: 140px;
+    font-size: 10px;
+}
+
+.legend-max {
+    float: right;
+}
+
+.legend-color {
+    padding: 0 5px;
+    border: 1px solid black;
 }
