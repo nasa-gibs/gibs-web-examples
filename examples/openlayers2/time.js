@@ -95,7 +95,7 @@ $(function() {
             attribution:
                 "<a href='http://openlayers.org/two'>" +
                 "OpenLayers</a>" +
-                "<a href='https://earthdata.nasa.gov/gibs'>" +
+                "<a href='https://wiki.earthdata.nasa.gov/display/GIBS'>" +
                 "NASA EOSDIS GIBS</a>" +
                 "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers2/js/time.js'>" +
                 "View Source" +
