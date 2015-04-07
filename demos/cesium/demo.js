@@ -123,6 +123,12 @@ window.onload = function() {
                 resolution: "250m",
                 format: "image/png"
             },
+            Sea_Surface_Temp_Infrared: {
+                id: "Sea_Surface_Temp_Infrared",
+                resolution: "500m",
+                format: "image/png",
+                startDate: new Date(Date.UTC(2014, 4, 8))
+            },
             VIIRS_CityLights_2012: {
                 id: "VIIRS_CityLights_2012",
                 resolution: "500m",
@@ -152,7 +158,7 @@ window.onload = function() {
             ],
             icon: "images/aerosols.png"
         },{
-            name: "Surface Temperature, Day",
+            name: "Land Surface Temperature, Day",
             layers: [
                 "MODIS_Terra_CorrectedReflectance_TrueColor",
                 "MODIS_Terra_Land_Surface_Temp_Day",
@@ -160,12 +166,19 @@ window.onload = function() {
             ],
             icon: "images/land_surface_temperature_day.png"
         },{
-            name: "Surface Temperature, Night",
+            name: "Land Surface Temperature, Night",
             layers: [
                 "OSM_Land_Water_Map",
                 "MODIS_Terra_Land_Surface_Temp_Night"
             ],
             icon: "images/land_surface_temperature_night.png"
+        },{
+            name: "Sea Surface Temperature",
+            layers: [
+                "OSM_Land_Water_Map",
+                "Sea_Surface_Temp_Infrared"
+            ],
+            icon: "images/sea_surface_temperature.png"
         },{
             name: "Fires",
             layers: [
