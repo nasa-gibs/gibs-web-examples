@@ -73,7 +73,7 @@ window.onload = function() {
             [89.9999, 179.9999]
         ],
         attribution:
-            "<a href='https://earthdata.nasa.gov/gibs'>" +
+            "<a href='https://wiki.earthdata.nasa.gov/display/GIBS'>" +
             "NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;" +
             "<a href='https://github.com/nasa-gibs/web-examples/blob/release/leaflet/js/geographic-epsg4326.js'>" +
             "View Source" +
