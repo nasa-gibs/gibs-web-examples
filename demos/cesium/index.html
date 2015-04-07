@@ -27,13 +27,28 @@ limitations under the License.
 
     <script src="../../lib/cesium-1.7.1/Cesium.js"></script>
     <script src="../../lib/lodash-3.5.0/lodash.min.js"></script>
+    <script src="../../lib/jquery-1.11.2/jquery.min.js"></script>
     <script src="gibs.js"></script>
     <script src="demo.js"></script>
 </head>
 
 <body>
     <div id="map"></div>
-    <div id="attribution">
+    <div id="info">
+        <div id="legend">
+            <div class="scale">
+                <div class="legend-title"></div>
+                <div><img class="legend-colorbar"></img></div>
+                <div class="legend-ranges">
+                    <span class="legend-min"></span>
+                    <span class="legend-max"></span>
+                </div>
+            </div>
+            <div class="single">
+                <span class="legend-color">&nbsp;</span>
+                <span class="legend-title"></span>
+            </div>
+        </div>
         <a href='https://wiki.earthdata.nasa.gov/display/GIBS'>NASA EOSDIS GIBS</a>
     </div>
 </body>

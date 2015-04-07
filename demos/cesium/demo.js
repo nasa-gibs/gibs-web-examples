@@ -18,7 +18,7 @@
 * limitations under the License.
 */
 
-window.onload = function() {
+$(function() {
 
     credit = {
         osm: new Cesium.Credit(
@@ -156,7 +156,14 @@ window.onload = function() {
                 "MODIS_Terra_Aerosol",
                 "Coastlines"
             ],
-            icon: "images/aerosols.png"
+            icon: "images/aerosols.png",
+            legend: {
+                type: "scale",
+                title: "Aerosol Optical Depth",
+                colorbar: "colorbars/aerosol.png",
+                min: "-0.05",
+                max: "0.70"
+            }
         },{
             name: "Land Surface Temperature, Day",
             layers: [
@@ -164,21 +171,42 @@ window.onload = function() {
                 "MODIS_Terra_Land_Surface_Temp_Day",
                 "Coastlines"
             ],
-            icon: "images/land_surface_temperature_day.png"
+            icon: "images/land_surface_temperature_day.png",
+            legend: {
+                type: "scale",
+                title: "Temperature",
+                colorbar: "colorbars/land_surface_temperature.png",
+                min: "-33&deg;C",
+                max: "67&deg;C"
+            }
         },{
             name: "Land Surface Temperature, Night",
             layers: [
                 "OSM_Land_Water_Map",
                 "MODIS_Terra_Land_Surface_Temp_Night"
             ],
-            icon: "images/land_surface_temperature_night.png"
+            icon: "images/land_surface_temperature_night.png",
+            legend: {
+                type: "scale",
+                title: "Temperature",
+                colorbar: "colorbars/land_surface_temperature.png",
+                min: "-33&deg;C",
+                max: "67&deg;C"
+            }
         },{
             name: "Sea Surface Temperature",
             layers: [
                 "OSM_Land_Water_Map",
                 "Sea_Surface_Temp_Infrared"
             ],
-            icon: "images/sea_surface_temperature.png"
+            icon: "images/sea_surface_temperature.png",
+            legend: {
+                type: "scale",
+                title: "Temperature",
+                colorbar: "colorbars/sea_surface_temperature.png",
+                min: "2&deg;C",
+                max: "32&deg;C"
+            }
         },{
             name: "Fires",
             layers: [
@@ -186,7 +214,12 @@ window.onload = function() {
                 "MODIS_Fires_Terra",
                 "Coastlines"
             ],
-            icon: "images/fires.png"
+            icon: "images/fires.png",
+            legend: {
+                type: "single",
+                title: "Fires",
+                color: "#f00"
+            }
         },{
             name: "Dust",
             layers: [
@@ -194,7 +227,14 @@ window.onload = function() {
                 "AIRS_Dust_Score",
                 "Coastlines"
             ],
-            icon: "images/dust_score.png"
+            icon: "images/dust_score.png",
+            legend: {
+                type: "scale",
+                title: "Dust Score",
+                colorbar: "colorbars/dust_score.png",
+                min: "360",
+                max: "500+"
+            }
         },{
             name: "Sea Ice",
             layers: [
@@ -202,7 +242,12 @@ window.onload = function() {
                 "MODIS_Terra_Sea_Ice",
                 "Coastlines"
             ],
-            icon: "images/sea_ice.png"
+            icon: "images/sea_ice.png",
+            legend: {
+                type: "single",
+                title: "Ice",
+                color: "rgb(218,112,214)"
+            }
         },{
             name: "Snow Cover",
             layers: [
@@ -210,7 +255,14 @@ window.onload = function() {
                 "MODIS_Terra_Snow_Cover",
                 "Coastlines"
             ],
-            icon: "images/snow_cover.png"
+            icon: "images/snow_cover.png",
+            legend: {
+                type: "scale",
+                title: "Snow Cover",
+                colorbar: "colorbars/snow_cover.png",
+                min: "1%",
+                max: "100%"
+            }
         },{
             name: "Earth at Night 2012",
             layers: [
@@ -227,4 +279,4 @@ window.onload = function() {
     };
 
     gibs.Viewer(config);
-};
+});
