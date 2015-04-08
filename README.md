@@ -21,7 +21,8 @@ source for
  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/time.html)
 * Cesium
- * [Single Day, Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/webmercator-epsg3857.html)
+ * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/webmercator-epsg3857.html)
+ * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/geographic-epsg4326.html)
  * [Time Slider](https://earthdata.nasa.gov/labs/gibs/examples/cesium/time.html)
  * [Lighting and Terrain](https://earthdata.nasa.gov/labs/gibs/examples/cesium/terrain.html)
 * Bing
@@ -91,10 +92,11 @@ See: [https://github.com/kartena/Proj4Leaflet/issues/62](https://github.com/kart
 
 This example uses [Cesium](http://cesiumjs.org/) version 1.4.
 
-All examples use the Web Mercator GIBS service. The `GeographicTilingScheme`
-class does not provide an easy way to represent irregular tile matrix sets. Code to handle the Geographic endpoint may be provided in the future.
+Use this
+[https://github.com/nasa-gibs/gibs-web-examples/blob/master/lib/gibs/gibs.js](GeographicTilingScheme) when accessing the
+EPSG:4326 GIBS endpoint.
 
-The lighting and terrain example uses the [STK World Terrain](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) data set.  
+The lighting and terrain example uses the [STK World Terrain](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) data set.
 
 ## Bing
 
