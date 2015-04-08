@@ -1,6 +1,6 @@
 Name:		gibs-web-examples
-Version:	3.0.0
-Release:	2%{?dist}
+Version:	4.0.0
+Release:	1%{?dist}
 Summary:	Examples of using GIBS with various web mapping libraries
 
 License:	ASL 2.0
@@ -25,7 +25,7 @@ cp %{SOURCE1} .
 %install
 rm -rf %{buildroot}
 install -m 755 -d %{buildroot}/%{_datadir}/%{name}
-cp -r {openlayers*,leaflet,cesium,bing,google} %{buildroot}/%{_datadir}/%{name}
+cp -r {examples,demos,lib} %{buildroot}/%{_datadir}/%{name}
 
 install -m 755 -d %{buildroot}/%{_sysconfdir}/httpd/conf.d
 install -m 644 gibs-web-examples.httpd.conf \
@@ -59,6 +59,9 @@ fi
 
 
 %changelog
+* Wed Apr 8 2015 Mike McGann <mike.mcgann@nasa.gov> - 4.0.0-1
+- Added Cesium demo
+
 * Fri Sep 26 2014 Mike McGann <mike.mcgann@nasa.gov> - 2.0.0-1
 - Upgraded OpenLayers 3 to release version
 - Upgraded Leaflet to 0.7.3
