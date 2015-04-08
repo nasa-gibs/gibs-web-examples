@@ -47,7 +47,7 @@ window.onload = function() {
             "OpenLayers</a>" +
             "<a href='https://wiki.earthdata.nasa.gov/display/GIBS'>" +
             "NASA EOSDIS GIBS</a>" +
-            "<a href='https://github.com/nasa-gibs/web-examples/blob/release/openlayers2/js/webmercator-epsg3857.js'>" +
+            "<a href='https://github.com/nasa-gibs/web-examples/blob/release/examples/openlayers2/webmercator-epsg3857.js'>" +
             "View Source" +
             "</a>"
     });
