@@ -93,7 +93,7 @@ See: [https://github.com/kartena/Proj4Leaflet/issues/62](https://github.com/kart
 This example uses [Cesium](http://cesiumjs.org/) version 1.4.
 
 Use this
-[https://github.com/nasa-gibs/gibs-web-examples/blob/master/lib/gibs/gibs.js](GeographicTilingScheme) when accessing the
+[GeographicTilingScheme](https://github.com/nasa-gibs/gibs-web-examples/blob/master/lib/gibs/gibs.js) when accessing the
 EPSG:4326 GIBS endpoint.
 
 The lighting and terrain example uses the [STK World Terrain](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) data set.
