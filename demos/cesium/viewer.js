@@ -184,7 +184,7 @@ gibs.Viewer = function(config) {
         }
 
         // Compute east/west bounds
-        var minLon = 20.6015625 + curHour * (-200.53125/23.0);
+        var minLon = 20.6015625 + curHour * (-200.53125/23.0) + 20;
         var maxLon = minLon + 159.328125;
 
         var minLat = -46.546875;
