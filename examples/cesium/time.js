@@ -31,8 +31,11 @@ window.onload = function() {
     var endTime = Cesium.JulianDate.now();
 
     var clock = new Cesium.Clock({
+        startTime: startTime,
+        endTime: endTime,
         currentTime: initialTime,
-        multiplier: 0   // Don't start animation by default
+        multiplier: 0,   // Don't start animation by default
+        clockRange: Cesium.ClockRange.CLAMPED
     });
 
     // Keep track of the previous day. Only update the layer on a tick if the
@@ -57,15 +60,15 @@ window.onload = function() {
         // Day of the imagery to display is appended to the imagery
         // provider URL
         var provider = new Cesium.WebMapTileServiceImageryProvider({
-            url: "//map1.vis.earthdata.nasa.gov/wmts-webmerc/wmts.cgi?" + time,
+            url: "//map1.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?" + time,
             layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
             style: "",
             format: "image/jpeg",
-            tileMatrixSetID: "GoogleMapsCompatible_Level9",
-            maximumLevel: 9,
+            tileMatrixSetID: "EPSG4326_250m",
+            maximumLevel: 8,
             tileWidth: 256,
             tileHeight: 256,
-            tilingScheme: new Cesium.WebMercatorTilingScheme()
+            tilingScheme: gibs.GeographicTilingScheme()
         });
 
         return provider;
@@ -77,22 +80,21 @@ window.onload = function() {
         imageryProvider: createDailyProvider()
     });
     viewer.timeline.zoomTo(startTime, endTime);
+    viewer.scene.globe.baseColor = Cesium.Color.BLACK;
 
     // When the clock changes, check to see if the day has changed and
     // replace the current layer with a new one. Don't do this check
-    // more than once a second.
+    // too often.
     var onClockUpdate = _.throttle(function() {
         var isoDateTime = clock.currentTime.toString();
         var time = isoDate(isoDateTime);
         if ( time !== previousTime ) {
             previousTime = time;
-            if ( dailyProvider ) {
-                viewer.scene.imageryLayers.remove(dailyLayer);
-            }
-            dailyLayer = viewer.scene.imageryLayers.addImageryProvider(
+            viewer.scene.imageryLayers.removeAll();
+            viewer.scene.imageryLayers.addImageryProvider(
                     createDailyProvider());
         }
-    }, 1000);
+    }, 250, {leading: true, trailing: true});
 
     viewer.clock.onTick.addEventListener(onClockUpdate);
     onClockUpdate();
