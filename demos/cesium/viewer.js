@@ -32,7 +32,7 @@ gibs.Viewer = function(config) {
     // the near-real time imagery is processing.
     var show = new Date();
     if ( show.getUTCHours() < 3 ) {
-        show.setUTCDate(now.getUTCDate() - 1);
+        show.setUTCDate(show.getUTCDate() - 1);
     }
     var initialTime = Cesium.JulianDate.fromDate(show);
 
@@ -183,8 +183,11 @@ gibs.Viewer = function(config) {
             curHour = 23;
         }
 
+        // Adjust for globe view
+        curHour -= 5;
+
         // Compute east/west bounds
-        var minLon = 20.6015625 + curHour * (-200.53125/23.0) + 20;
+        var minLon = 20.6015625 + curHour * (-200.53125/23.0);
         var maxLon = minLon + 159.328125;
 
         var minLat = -46.546875;
