@@ -90,7 +90,7 @@ See: [https://github.com/kartena/Proj4Leaflet/issues/62](https://github.com/kart
 
 ## Cesium
 
-This example uses [Cesium](http://cesiumjs.org/) version 1.4.
+This example uses [Cesium](http://cesiumjs.org/) version 1.9.
 
 Use this
 [GeographicTilingScheme](https://github.com/nasa-gibs/gibs-web-examples/blob/release/lib/gibs/gibs.js) when accessing the
