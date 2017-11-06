@@ -8,7 +8,7 @@ source for
 
 ## Live Examples
 
-* OpenLayers
+* OpenLayers 3
   * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/geographic-epsg4326.html)
   * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/arctic-epsg3413.html)
   * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/antarctic-epsg3031.html)
@@ -61,9 +61,9 @@ in the tiling software. This issue will be fixed sometime in the future.
 [Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
 
-## OpenLayers
+## OpenLayers 3
 
-This example uses [OpenLayers](http://openlayers.org/) version 3.4.0.
+This example uses [OpenLayers 3](http://openlayers.org/) version 3.4.0.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
