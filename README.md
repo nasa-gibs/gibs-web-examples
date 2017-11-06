@@ -14,7 +14,7 @@ source for
   * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/antarctic-epsg3031.html)
   * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/webmercator-epsg3857.html)
   * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/time.html)
-* Leaflet
+* Leaflet (Legacy)
   * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
   * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
   * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
@@ -74,7 +74,7 @@ As of this version of OpenLayers, the canvas renderer does not work when using o
 In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the
 base URL string.
 
-## Leaflet
+## Leaflet (Legacy)
 
 This example uses [Leaflet](http://leafletjs.com) version 0.7.3.
 
