@@ -85,7 +85,7 @@ $(function() {
 
     var createLayer = function() {
         var source = new ol.source.WMTS({
-            url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=" + dayParameter(),
+            url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=" + dayParameter(),
             layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
             format: "image/jpeg",
             matrixSet: "EPSG4326_250m",

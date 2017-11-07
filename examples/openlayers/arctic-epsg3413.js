@@ -39,7 +39,7 @@ window.onload = function() {
     });
 
     var source = new ol.source.WMTS({
-        url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-arctic/wmts.cgi?TIME=2013-06-15",
+        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-arctic/wmts.cgi?TIME=2013-06-15",
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         extent: [-4194304, -4194304, 4194304, 4194304],
         format: "image/jpeg",
