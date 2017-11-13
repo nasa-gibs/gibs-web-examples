@@ -23,7 +23,7 @@ window.onload = function() {
     var map = new Microsoft.Maps.Map(document.getElementById("map"), {
         // Obtain your own API key at
         // https://www.bingmapsportal.com
-        credentials: "API_KEY_HERE",
+        credentials: "AhbILr0g2neqbaGZ_NN83LxRbcYVv_8oNgQv3ITZ-Dq0NsUIor1w8C8pIufTQhzv",
         center: new Microsoft.Maps.Location(21, 78),
         zoom: 5,
         mapTypeId: Microsoft.Maps.MapTypeId.road,
