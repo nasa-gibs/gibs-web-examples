@@ -9,11 +9,11 @@ source for
 ## Live Examples
 
 * OpenLayers 3
-  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/geographic-epsg4326.html)
-  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/arctic-epsg3413.html)
-  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/antarctic-epsg3031.html)
-  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/webmercator-epsg3857.html)
-  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/time.html)
+  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/geographic-epsg4326.html)
+  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/arctic-epsg3413.html)
+  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/antarctic-epsg3031.html)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/webmercator-epsg3857.html)
+  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers3/time.html)
 * Leaflet (Legacy)
   * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
   * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
