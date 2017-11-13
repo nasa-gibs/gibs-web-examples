@@ -20,15 +20,15 @@
 
 window.onload = function() {
 
-    proj4.defs("EPSG:3413",
-        "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +k=1 +x_0=0 +y_0=0 " +
+    proj4.defs("EPSG:3031",
+        "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +k=1 +x_0=0 +y_0=0 " +
         "+datum=WGS84 +units=m +no_defs");
-    ol.proj.get("EPSG:3413").setExtent([-4194304, -4194304, 4194304, 4194304]);
+    ol.proj.get("EPSG:3031").setExtent([-4194304, -4194304, 4194304, 4194304]);
 
     var map = new ol.Map({
         view: new ol.View({
             maxResolution: 8192.0,
-            projection: ol.proj.get("EPSG:3413"),
+            projection: ol.proj.get("EPSG:3031"),
             extent: [-4194304, -4194304, 4194304, 4194304],
             center: [0, 0],
             zoom: 1,
@@ -39,11 +39,11 @@ window.onload = function() {
     });
 
     var source = new ol.source.WMTS({
-        url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-arctic/wmts.cgi?TIME=2013-06-15",
+        url: "https://map1{a-c}.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi?TIME=2013-12-01",
         layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
         extent: [-4194304, -4194304, 4194304, 4194304],
         format: "image/jpeg",
-        matrixSet: "EPSG3413_250m",
+        matrixSet: "EPSG3031_250m",
 
         tileGrid: new ol.tilegrid.WMTS({
             origin: [-4194304, 4194304],
@@ -63,4 +63,5 @@ window.onload = function() {
     var layer = new ol.layer.Tile({source: source});
 
     map.addLayer(layer);
-};
+
+ };

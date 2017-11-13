@@ -8,34 +8,34 @@ source for
 
 ## Live Examples
 
-* OpenLayers
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/geographic-epsg4326.html)
- * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/arctic-epsg3413.html)
- * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/antarctic-epsg3031.html)
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/webmercator-epsg3857.html)
- * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/time.html)
-* Leaflet
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
- * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
- * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
- * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/time.html)
+* OpenLayers 3
+  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/geographic-epsg4326.html)
+  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/arctic-epsg3413.html)
+  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/antarctic-epsg3031.html)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/webmercator-epsg3857.html)
+  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers/time.html)
+* Leaflet (Legacy)
+  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/geographic-epsg4326.html)
+  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/arctic-epsg3413.html)
+  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/antarctic-epsg3031.html)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/webmercator-epsg3857.html)
+  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/leaflet/time.html)
 * Cesium
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/webmercator-epsg3857.html)
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/geographic-epsg4326.html)
- * [Time Slider](https://earthdata.nasa.gov/labs/gibs/examples/cesium/time.html)
- * [Lighting and Terrain](https://earthdata.nasa.gov/labs/gibs/examples/cesium/terrain.html)
- * [Demonstration of GIBS Layers](https://earthdata.nasa.gov/labs/gibs/demos/cesium)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/webmercator-epsg3857.html)
+  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/cesium/geographic-epsg4326.html)
+  * [Time Slider](https://earthdata.nasa.gov/labs/gibs/examples/cesium/time.html)
+  * [Lighting and Terrain](https://earthdata.nasa.gov/labs/gibs/examples/cesium/terrain.html)
+  * [Demonstration of GIBS Layers](https://earthdata.nasa.gov/labs/gibs/demos/cesium)
 * Bing
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/bing/webmercator-epsg3857.html)
 * Google Maps
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/google/webmercator-epsg3857.html)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/google/webmercator-epsg3857.html)
 * OpenLayers 2
- * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/geographic-epsg4326.html)
- * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/arctic-epsg3413.html)
- * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/antarctic-epsg3031.html)
- * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/webmercator-epsg3857.html)
- * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/time.html)
+  * [Geographic (EPSG:4326)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/geographic-epsg4326.html)
+  * [Arctic (EPSG:3413)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/arctic-epsg3413.html)
+  * [Antarctic (EPSG:3031)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/antarctic-epsg3031.html)
+  * [Web Mercator (EPSG:3857)](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/webmercator-epsg3857.html)
+  * [Rolling Seven Day Slider](https://earthdata.nasa.gov/labs/gibs/examples/openlayers2/time.html)
 
 ## Overview
 
@@ -61,9 +61,9 @@ in the tiling software. This issue will be fixed sometime in the future.
 [Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
 
-## OpenLayers
+## OpenLayers 3
 
-This example uses [OpenLayers](http://openlayers.org/) version 3.4.0.
+This example uses [OpenLayers 3](http://openlayers.org/) version 3.4.0.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
@@ -74,7 +74,7 @@ As of this version of OpenLayers, the canvas renderer does not work when using o
 In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the
 base URL string.
 
-## Leaflet
+## Leaflet (Legacy)
 
 This example uses [Leaflet](http://leafletjs.com) version 0.7.3.
 
