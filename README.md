@@ -67,13 +67,9 @@ in the tiling software. This issue will be fixed sometime in the future.
 [Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
 
-## OpenLayers 4
+## OpenLayers 3 & 4
 
-This example uses [OpenLayers 4](http://openlayers.org/) version 4.5.0.
-
-## OpenLayers 3
-
-This example uses [OpenLayers 3](http://geoadmin.github.io/ol3/apidoc/) version 3.20.1.
+There are examples available using both [OpenLayers 4](http://openlayers.org/) version 4.5.0. and [OpenLayers 3](http://geoadmin.github.io/ol3/apidoc/) version 3.20.1.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
@@ -81,8 +77,7 @@ example uses proj4js version 2.4.3. This is not required to simply display the m
 
 As of this version of OpenLayers, the canvas renderer does not work when using ol.source.XYZ with a tile size that is not 256. In this case, use ol.tilegrid.WMTS instead.
 
-In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the
-base URL string.
+In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the base URL string.
 
 ## Leaflet (Legacy)
 
