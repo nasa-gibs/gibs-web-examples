@@ -8,6 +8,12 @@ source for
 
 ## Live Examples
 
+* OpenLayers 4
+  * [Geographic (EPSG:4326)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers4/geographic-epsg4326.html)
+  * [Arctic (EPSG:3413)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers4/arctic-epsg3413.html)
+  * [Antarctic (EPSG:3031)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers4/antarctic-epsg3031.html)
+  * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers4/webmercator-epsg3857.html)
+  * [Rolling Seven Day Slider](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers4/time.html)
 * OpenLayers 3
   * [Geographic (EPSG:4326)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers3/geographic-epsg4326.html)
   * [Arctic (EPSG:3413)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers3/arctic-epsg3413.html)
@@ -61,18 +67,17 @@ in the tiling software. This issue will be fixed sometime in the future.
 [Worldview](https://github.com/nasa-gibs/worldview) is a web application that
 uses GIBS as its primary image source.
 
-## OpenLayers 3
+## OpenLayers 3 & 4
 
-This example uses [OpenLayers 3](http://openlayers.org/) version 3.20.1.
+There are examples available using both [OpenLayers 4](http://openlayers.org/) version 4.5.0. and [OpenLayers 3](http://geoadmin.github.io/ol3/apidoc/) version 3.20.1.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
-example uses proj4js version 2.3.3. This is not required to simply display the map.
+example uses proj4js version 2.4.3. This is not required to simply display the map.
 
 As of this version of OpenLayers, the canvas renderer does not work when using ol.source.XYZ with a tile size that is not 256. In this case, use ol.tilegrid.WMTS instead.
 
-In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the
-base URL string.
+In ol.tilegrid.WMTS, there no way to add additional parameters (such as TIME) as was possible in OpenLayers 2. The parameter can simply be added to the end of the base URL string.
 
 ## Leaflet (Legacy)
 
