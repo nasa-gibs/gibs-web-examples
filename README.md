@@ -63,7 +63,7 @@ uses GIBS as its primary image source.
 
 ## OpenLayers 3
 
-This example uses [OpenLayers 3](http://openlayers.org/) version 3.4.0.
+This example uses [OpenLayers 3](http://openlayers.org/) version 3.20.1.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
