@@ -142,16 +142,16 @@ gibs.Viewer = function (config) {
     if (!legend) {
       qs('#legend').style.display = 'none';
     } else if (legend.type === 'scale') {
-      qs('.legend-title').textContent = legend.title;
+      qs('.scale .legend-title').textContent = legend.title;
       qs('.legend-colorbar').setAttribute('src', legend.colorbar);
-      qs('.legend-max').textContent = legend.max;
-      qs('.legend-min').textContent = legend.min;
+      qs('.legend-max').innerHTML = legend.max;
+      qs('.legend-min').innerHTML = legend.min;
       qs('#legend .single').style.display = 'none';
       qs('#legend .scale').style.display = 'block';
       qs('#legend').style.display = 'block';
     } else {
-      qs('.legend-title').html(legend.title);
-      qs('.legend-color').css('background-color', legend.color);
+      qs('.single .legend-title').textContent = legend.title;
+      qs('.legend-color').style.backgroundColor = legend.color;
       qs('#legend .scale').style.display = 'none';
       qs('#legend .single').style.display = 'block';
       qs('#legend').style.display = 'block';
@@ -200,7 +200,6 @@ gibs.Viewer = function (config) {
     );
   };
 
-  console.log('viewer', viewer);
   viewer.camera.setView({ destination: getLeadingPoint() });
 
   return viewer;

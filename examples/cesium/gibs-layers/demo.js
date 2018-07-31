@@ -47,8 +47,8 @@ window.onload = function () {
       }
     },
     layers: {
-      AIRS_Dust_Score: {
-        id: 'AIRS_Dust_Score',
+      AIRS_Dust_Score_Ocean_Day: {
+        id: 'AIRS_Dust_Score_Ocean_Day',
         resolution: '2km',
         format: 'image/png',
         startDate: new Date(Date.UTC(2014, 4, 8))
@@ -105,8 +105,8 @@ window.onload = function () {
         format: 'image/png',
         startDate: new Date(Date.UTC(2014, 4, 8))
       },
-      MODIS_Terra_Snow_Cover: {
-        id: 'MODIS_Terra_Snow_Cover',
+      MODIS_Terra_NDSI_Snow_Cover: {
+        id: 'MODIS_Terra_NDSI_Snow_Cover',
         resolution: '500m',
         format: 'image/png',
         startDate: new Date(Date.UTC(2014, 4, 8))
@@ -223,7 +223,7 @@ window.onload = function () {
       name: 'Dust',
       layers: [
         'MODIS_Aqua_CorrectedReflectance_TrueColor',
-        'AIRS_Dust_Score',
+        'AIRS_Dust_Score_Ocean_Day',
         'Coastlines'
       ],
       icon: 'images/dust_score.png',
@@ -245,13 +245,13 @@ window.onload = function () {
       legend: {
         type: 'single',
         title: 'Ice',
-        color: 'rgb(218,112,214)'
+        color: 'rgb(255,100,100)'
       }
     }, {
       name: 'Snow Cover',
       layers: [
         'MODIS_Terra_SurfaceReflectance_Bands721',
-        'MODIS_Terra_Snow_Cover',
+        'MODIS_Terra_NDSI_Snow_Cover',
         'Coastlines'
       ],
       icon: 'images/snow_cover.png',
