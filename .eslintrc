@@ -17,7 +17,9 @@
     "object-curly-spacing": ["error", "always"]
   },
   "globals": {
-    "L": true
+    "L": true,
+    "ol": true,
+    "proj4": true
   },
   "overrides": [
     {
