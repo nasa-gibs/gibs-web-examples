@@ -5,15 +5,15 @@
     },
     "scripts": {
         "start": "tasks/start.js",
-        "test": "grunt lint"
+        "test": "npx eslint ."
     },
     "devDependencies": {
-        "express": "^4.16.3",
-        "grunt": "0.4.x",
-        "grunt-contrib-clean": "0.5.x",
-        "grunt-contrib-csslint": "0.2.x",
-        "grunt-contrib-jshint": "0.8.x",
-        "grunt-exec": "0.4.x",
-        "grunt-git-rev-parse": "0.1.x"
+        "eslint": "^4.13.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^5.2.1",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "express": "^4.16.3"
     }
 }
