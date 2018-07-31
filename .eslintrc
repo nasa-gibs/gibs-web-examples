@@ -17,6 +17,8 @@
     "object-curly-spacing": ["error", "always"]
   },
   "globals": {
+    "Cesium": true,
+    "gibs": true,
     "L": true,
     "ol": true,
     "proj4": true
@@ -25,6 +27,7 @@
     {
       "files": [ "examples/**/*.js" ],
       "rules": {
+        "no-new": "off",
         "no-octal": "error",
         "no-unused-vars": "error",
         "no-undef": "error",
