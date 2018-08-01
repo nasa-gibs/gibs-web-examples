@@ -88,8 +88,8 @@ window.onload = function () {
   };
 
   var template =
-    '//map1{s}.vis.earthdata.nasa.gov/wmts-geo/' +
-    '{layer}/default/{time}/{tileMatrixSet}/{z}/{y}/{x}.jpg';
+  '//gibs-{s}.earthdata.nasa.gov/wmts/epsg4326/best/' +
+  '{layer}/default/{time}/{tileMatrixSet}/{z}/{y}/{x}.jpg';
 
   function createLayer() {
     var layer = L.tileLayer(template, {
