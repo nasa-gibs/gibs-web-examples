@@ -1,20 +1,24 @@
 {
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nasa-gibs/gibs-web-examples.git"
-    },
-    "scripts": {
-        "start": "tasks/start.js",
-        "test": "npx eslint examples && npx stylelint examples/**/*.css"
-    },
-    "devDependencies": {
-        "eslint": "^4.13.0",
-        "eslint-config-standard": "^10.2.1",
-        "eslint-plugin-import": "^2.8.0",
-        "eslint-plugin-node": "^5.2.1",
-        "eslint-plugin-promise": "^3.6.0",
-        "eslint-plugin-standard": "^3.0.1",
-        "express": "^4.16.3",
-        "stylelint": "^9.4.0"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasa-gibs/gibs-web-examples.git"
+  },
+  "scripts": {
+    "clean": "node tasks/clean.js",
+    "dist": "node tasks/dist.js",
+    "start": "node tasks/start.js",
+    "test": "npx eslint examples && npx stylelint examples/**/*.css"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.16.3",
+    "shelljs": "^0.8.2",
+    "stylelint": "^9.4.0",
+    "tar": "^4.4.4"
+  }
 }
