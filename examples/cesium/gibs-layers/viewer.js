@@ -19,9 +19,9 @@
 */
 
 gibs.Viewer = function (config) {
-  // Earliest date of Corrected Reflectance in archive: May 8, 2012
+  // Earliest date of Corrected Reflectance in archive: Feb 24, 2000
   var startTime = Cesium.JulianDate.fromDate(
-    new Date(Date.UTC(2012, 4, 8)));
+    new Date(Date.UTC(2000, 1, 24)));
 
   var endTime = Cesium.JulianDate.now();
 
@@ -103,7 +103,6 @@ gibs.Viewer = function (config) {
   config.sets.forEach(function (set) {
     var model = new Cesium.ProviderViewModel({
       name: set.name,
-      tooltip: 'Hello',
       iconUrl: set.icon,
       creationFunction: function () {
         // Return an empty set and update the layers in the same

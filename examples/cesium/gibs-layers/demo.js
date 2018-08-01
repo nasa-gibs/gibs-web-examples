@@ -51,7 +51,7 @@ window.onload = function () {
         id: 'AIRS_Dust_Score_Ocean_Day',
         resolution: '2km',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2016, 0, 28))
       },
       BlueMarble_ShadedRelief_Bathymetry: {
         id: 'BlueMarble_ShadedRelief_Bathymetry',
@@ -68,65 +68,65 @@ window.onload = function () {
         id: 'MODIS_Aqua_CorrectedReflectance_TrueColor',
         resolution: '250m',
         format: 'image/jpeg',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2002, 6, 3))
       },
       MODIS_Fires_Terra: {
         id: 'MODIS_Fires_Terra',
         wms: true,
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2012, 4, 8))
       },
       MODIS_Terra_Aerosol: {
         id: 'MODIS_Terra_Aerosol',
         resolution: '2km',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       MODIS_Terra_CorrectedReflectance_TrueColor: {
         id: 'MODIS_Terra_CorrectedReflectance_TrueColor',
         resolution: '250m',
         format: 'image/jpeg',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       MODIS_Terra_Land_Surface_Temp_Day: {
         id: 'MODIS_Terra_Land_Surface_Temp_Day',
         resolution: '1km',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       MODIS_Terra_Land_Surface_Temp_Night: {
         id: 'MODIS_Terra_Land_Surface_Temp_Night',
         resolution: '1km',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       MODIS_Terra_Sea_Ice: {
         id: 'MODIS_Terra_Sea_Ice',
         resolution: '1km',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       MODIS_Terra_NDSI_Snow_Cover: {
         id: 'MODIS_Terra_NDSI_Snow_Cover',
         resolution: '500m',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       MODIS_Terra_SurfaceReflectance_Bands721: {
         id: 'MODIS_Terra_SurfaceReflectance_Bands721',
         resolution: '500m',
         format: 'image/jpeg',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2000, 1, 24))
       },
       OSM_Land_Water_Map: {
         id: 'OSM_Land_Water_Map',
         resolution: '250m',
         format: 'image/png'
       },
-      Sea_Surface_Temp_Infrared: {
-        id: 'Sea_Surface_Temp_Infrared',
-        resolution: '500m',
+      GHRSST_L4_MUR_Sea_Surface_Temperature: {
+        id: 'GHRSST_L4_MUR_Sea_Surface_Temperature',
+        resolution: '1km',
         format: 'image/png',
-        startDate: new Date(Date.UTC(2014, 4, 8))
+        startDate: new Date(Date.UTC(2002, 6, 1))
       },
       VIIRS_CityLights_2012: {
         id: 'VIIRS_CityLights_2012',
@@ -159,7 +159,7 @@ window.onload = function () {
       legend: {
         type: 'scale',
         title: 'Aerosol Optical Depth',
-        colorbar: 'colorbars/aerosol.png',
+        colorbar: 'colorbars/MODIS_Terra_Aerosol_Optical_Depth.png',
         min: '-0.05',
         max: '0.70'
       }
@@ -196,7 +196,7 @@ window.onload = function () {
       name: 'Sea Surface Temperature',
       layers: [
         'OSM_Land_Water_Map',
-        'Sea_Surface_Temp_Infrared'
+        'GHRSST_L4_MUR_Sea_Surface_Temperature'
       ],
       icon: 'images/sea_surface_temperature.png',
       legend: {
@@ -258,7 +258,7 @@ window.onload = function () {
       legend: {
         type: 'scale',
         title: 'Snow Cover',
-        colorbar: 'colorbars/snow_cover.png',
+        colorbar: 'colorbars/MODIS_Terra_NDSI_Snow_Cover.png',
         min: '1%',
         max: '100%'
       }
