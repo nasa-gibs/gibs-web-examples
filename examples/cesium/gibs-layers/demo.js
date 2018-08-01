@@ -137,23 +137,20 @@ window.onload = function () {
     sets: [{
       name: 'Visible Reflectance, Morning',
       layers: [
-        'MODIS_Terra_CorrectedReflectance_TrueColor',
-        'Coastlines'
+        'MODIS_Terra_CorrectedReflectance_TrueColor'
       ],
       icon: 'images/terra_corrected_reflectance.png'
     }, {
       name: 'Visible Reflectance, Afternoon',
       layers: [
-        'MODIS_Aqua_CorrectedReflectance_TrueColor',
-        'Coastlines'
+        'MODIS_Aqua_CorrectedReflectance_TrueColor'
       ],
       icon: 'images/aqua_corrected_reflectance.png'
     }, {
       name: 'Aerosols',
       layers: [
         'MODIS_Terra_CorrectedReflectance_TrueColor',
-        'MODIS_Terra_Aerosol',
-        'Coastlines'
+        'MODIS_Terra_Aerosol'
       ],
       icon: 'images/aerosols.png',
       legend: {
@@ -167,8 +164,7 @@ window.onload = function () {
       name: 'Land Surface Temperature, Day',
       layers: [
         'MODIS_Terra_CorrectedReflectance_TrueColor',
-        'MODIS_Terra_Land_Surface_Temp_Day',
-        'Coastlines'
+        'MODIS_Terra_Land_Surface_Temp_Day'
       ],
       icon: 'images/land_surface_temperature_day.png',
       legend: {
@@ -210,8 +206,7 @@ window.onload = function () {
       name: 'Fires',
       layers: [
         'MODIS_Terra_CorrectedReflectance_TrueColor',
-        'MODIS_Fires_Terra',
-        'Coastlines'
+        'MODIS_Fires_Terra'
       ],
       icon: 'images/fires.png',
       legend: {
@@ -223,8 +218,7 @@ window.onload = function () {
       name: 'Dust',
       layers: [
         'MODIS_Aqua_CorrectedReflectance_TrueColor',
-        'AIRS_Dust_Score_Ocean_Day',
-        'Coastlines'
+        'AIRS_Dust_Score_Ocean_Day'
       ],
       icon: 'images/dust_score.png',
       legend: {
@@ -238,8 +232,7 @@ window.onload = function () {
       name: 'Sea Ice',
       layers: [
         'MODIS_Terra_SurfaceReflectance_Bands721',
-        'MODIS_Terra_Sea_Ice',
-        'Coastlines'
+        'MODIS_Terra_Sea_Ice'
       ],
       icon: 'images/sea_ice.png',
       legend: {
@@ -251,8 +244,7 @@ window.onload = function () {
       name: 'Snow Cover',
       layers: [
         'MODIS_Terra_SurfaceReflectance_Bands721',
-        'MODIS_Terra_NDSI_Snow_Cover',
-        'Coastlines'
+        'MODIS_Terra_NDSI_Snow_Cover'
       ],
       icon: 'images/snow_cover.png',
       legend: {

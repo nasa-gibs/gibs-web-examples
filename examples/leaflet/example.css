@@ -19,7 +19,7 @@
  */
 
 #map {
-  background-color: #0000;
+  background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
@@ -50,6 +50,10 @@
 .leaflet-bar a {
   background: rgba(40, 40, 40, 0.8);
   color: rgb(200, 200, 200);
+}
+
+.leaflet-bar a.leaflet-disabled {
+  background: rgba(40, 40, 40, 0.4);
 }
 
 .leaflet-bar a:hover {

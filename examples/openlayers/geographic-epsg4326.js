@@ -21,11 +21,11 @@
 window.onload = function () {
   var map = new ol.Map({
     view: new ol.View({
-      maxResolution: 0.5625,
       projection: ol.proj.get('EPSG:4326'),
       extent: [-180, -90, 180, 90],
       center: [0, 0],
       zoom: 2,
+      minZoom: 2,
       maxZoom: 8
     }),
     target: 'map',
