@@ -35,10 +35,10 @@ window.onload = function () {
         0.002197265625
       ],
       // Values are x and y here instead of lat and long elsewhere.
-      bounds: [
+      bounds: L.bounds([
         [-180, -90],
         [180, 90]
-      ]
+      ])
     }
   );
 
