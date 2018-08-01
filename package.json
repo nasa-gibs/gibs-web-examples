@@ -5,7 +5,7 @@
     },
     "scripts": {
         "start": "tasks/start.js",
-        "test": "npx eslint ."
+        "test": "npx eslint examples && npx stylelint examples/**/*.css"
     },
     "devDependencies": {
         "eslint": "^4.13.0",
@@ -14,6 +14,7 @@
         "eslint-plugin-node": "^5.2.1",
         "eslint-plugin-promise": "^3.6.0",
         "eslint-plugin-standard": "^3.0.1",
-        "express": "^4.16.3"
+        "express": "^4.16.3",
+        "stylelint": "^9.4.0"
     }
 }

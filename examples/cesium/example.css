@@ -19,7 +19,7 @@
 */
 
 #map {
-  background-color: #000000;
+  background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@
 }
 
 #attribution a {
-  font: 400 14px "helvetica",sans-serif;
+  font: 400 14px "helvetica", sans-serif;
   padding: 0 0.75em;
   color: rgb(200, 200, 200);
 }
