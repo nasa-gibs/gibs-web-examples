@@ -19,14 +19,6 @@
 */
 
 window.onload = function () {
-  var credit = {
-    osm: new Cesium.Credit(
-      '© OpenStreetMap contributors',
-      'images/osm.png',
-      'https://www.openstreetmap.org/copyright'
-    )
-  };
-
   var config = {
     resolutions: {
       '250m': {
@@ -57,12 +49,6 @@ window.onload = function () {
         id: 'BlueMarble_ShadedRelief_Bathymetry',
         resolution: '500m',
         format: 'image/jpeg'
-      },
-      Coastlines: {
-        id: 'Coastlines',
-        resolution: '250m',
-        format: 'image/png',
-        credit: credit.osm
       },
       MODIS_Aqua_CorrectedReflectance_TrueColor: {
         id: 'MODIS_Aqua_CorrectedReflectance_TrueColor',

@@ -66,21 +66,6 @@ window.onload = function () {
       '</a>'
   });
 
-  /*
-   * Monkey patch the getTileUrl function to ensure requests are within
-   * tile matrix set boundaries.
-   */
-  var actualGetTileUrl = layer.getTileUrl;
-
-  layer.getTileUrl = function (coords) {
-    var max = Math.pow(2, layer._getZoomForUrl() + 1);
-    if (coords.x < 0) { return ''; }
-    if (coords.y < 0) { return ''; }
-    if (coords.x >= max) { return ''; }
-    if (coords.y >= max) { return ''; }
-    return actualGetTileUrl.call(layer, coords);
-  };
-
   map.addLayer(layer);
 };
 

@@ -76,7 +76,12 @@ window.onload = function () {
     imageryProvider: createDailyProvider(),
     geocoder: false // Cesium Ion account needed for geocoder
   });
-  viewer.timeline.zoomTo(startTime, endTime);
+
+  // Set the timeline to show up to a year ago
+  var previousYear = new Date();
+  previousYear.setUTCFullYear(previousYear.getUTCFullYear() - 1);
+  viewer.timeline.zoomTo(Cesium.JulianDate.fromDate(previousYear), endTime);
+
   viewer.scene.globe.baseColor = Cesium.Color.BLACK;
 
   // When the clock changes, check to see if the day has changed and

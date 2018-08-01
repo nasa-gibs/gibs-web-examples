@@ -122,7 +122,11 @@ gibs.Viewer = function (config) {
     geocoder: false
   });
 
-  viewer.timeline.zoomTo(startTime, endTime);
+  // Set the timeline to show up to a year ago
+  var previousYear = new Date();
+  previousYear.setUTCFullYear(previousYear.getUTCFullYear() - 1);
+  viewer.timeline.zoomTo(Cesium.JulianDate.fromDate(previousYear), endTime);
+
   viewer.clock.onTick.addEventListener(onClockUpdate);
   onClockUpdate();
   viewer.scene.globe.baseColor = Cesium.Color.BLACK;
