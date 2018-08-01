@@ -24,7 +24,7 @@ window.onload = function () {
       projection: ol.proj.get('EPSG:4326'),
       extent: [-180, -90, 180, 90],
       center: [0, 0],
-      zoom: 2,
+      zoom: 3,
       minZoom: 2,
       maxZoom: 8
     }),
