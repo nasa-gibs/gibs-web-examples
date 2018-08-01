@@ -36,6 +36,7 @@
   background-color: rgba(40, 40, 40, 0.8);
   border-radius: 5px;
   border: 1px solid rgb(200, 200, 200);
+  z-index: 1000;
 }
 
 #day-panel div {
