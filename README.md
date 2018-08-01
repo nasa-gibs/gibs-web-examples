@@ -32,14 +32,14 @@ source for
 
 ## Overview
 
-Clone the repository and then:
+Clone the repository, then:
 
 ```bash
 npm install
 npm start
 ```
 
-And navigate your brower to http://localhost:3001.
+Navigate your browser to http://localhost:3001.
 
 All examples show a single layer. Visit the
 [GIBS Available Imagery Products](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products)
