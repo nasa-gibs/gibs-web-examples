@@ -26,7 +26,8 @@ window.onload = function () {
     center: new Microsoft.Maps.Location(21, 78),
     zoom: 5,
     mapTypeId: Microsoft.Maps.MapTypeId.road,
-    disableBirdseye: true
+    disableBirdseye: true,
+    maxZoom: 6
   });
 
   var uriConstructor = function (tile) {
