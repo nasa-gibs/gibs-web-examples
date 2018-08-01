@@ -21,6 +21,7 @@
     "gibs": true,
     "L": true,
     "ol": true,
+    "mapboxgl": true,
     "proj4": true
   },
   "overrides": [
