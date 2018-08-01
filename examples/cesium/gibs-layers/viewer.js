@@ -67,7 +67,7 @@ gibs.Viewer = function (config) {
     if (!layer.wms) {
       var resolution = config.resolutions[layer.resolution];
       var options = {
-        url: '//map1.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi' + time,
+        url: '//gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi' + time,
         layer: layer.id,
         style: '',
         format: layer.format,
@@ -84,7 +84,7 @@ gibs.Viewer = function (config) {
       provider = new Cesium.WebMapTileServiceImageryProvider(options);
     } else {
       var optionsWMS = {
-        url: '//map2.vis.earthdata.nasa.gov/wms/wms.php' + time,
+        url: '//gibs.earthdata.nasa.gov/wms/wms.php' + time,
         layers: layer.id,
         parameters: {
           transparent: true,
