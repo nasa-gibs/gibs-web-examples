@@ -91,6 +91,11 @@ This example uses [Cesium](http://cesiumjs.org/) version 1.47.
 Use this
 [GeographicTilingScheme](https://github.com/nasa-gibs/gibs-web-examples/blob/master/examples/cesium/gibs.js) when accessing the EPSG:4326 GIBS endpoint.
 
+## Mapbox GL
+
+This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/)
+version 0.47.
+
 ## Bing
 
 This example uses the [Bing Maps Control](https://msdn.microsoft.com/en-us/library/mt712542.aspx), version 8.
