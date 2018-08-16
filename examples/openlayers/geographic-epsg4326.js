@@ -56,7 +56,8 @@ window.onload = function () {
   });
 
   var layer = new ol.layer.Tile({
-    source: source
+    source: source,
+    extent: [-180, -90, 180, 90]
   });
 
   map.addLayer(layer);
