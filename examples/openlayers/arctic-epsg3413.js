@@ -41,7 +41,6 @@ window.onload = function () {
   var source = new ol.source.WMTS({
     url: 'https://gibs-{a-c}.earthdata.nasa.gov/wmts/epsg3413/best/wmts.cgi?TIME=2013-06-01',
     layer: 'MODIS_Terra_CorrectedReflectance_TrueColor',
-    extent: [-4194304, -4194304, 4194304, 4194304],
     format: 'image/jpeg',
     matrixSet: 'EPSG3413_250m',
 
@@ -60,7 +59,10 @@ window.onload = function () {
     })
   });
 
-  var layer = new ol.layer.Tile({ source: source });
+  var layer = new ol.layer.Tile({
+    source: source,
+    extent: [-4194304, -4194304, 4194304, 4194304]
+  });
 
   map.addLayer(layer);
 };
