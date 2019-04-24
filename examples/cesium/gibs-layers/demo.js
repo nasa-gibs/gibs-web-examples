@@ -56,8 +56,8 @@ window.onload = function () {
         format: 'image/jpeg',
         startDate: new Date(Date.UTC(2002, 6, 3))
       },
-      MODIS_Fires_Terra: {
-        id: 'MODIS_Fires_Terra',
+      MODIS_Terra_Thermal_Anomalies_Day: {
+        id: 'MODIS_Terra_Thermal_Anomalies_Day',
         wms: true,
         startDate: new Date(Date.UTC(2012, 4, 8))
       },
@@ -192,7 +192,7 @@ window.onload = function () {
       name: 'Fires',
       layers: [
         'MODIS_Terra_CorrectedReflectance_TrueColor',
-        'MODIS_Fires_Terra'
+        'MODIS_Terra_Thermal_Anomalies_Day'
       ],
       icon: 'images/fires.png',
       legend: {
