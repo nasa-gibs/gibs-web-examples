@@ -84,7 +84,7 @@ gibs.Viewer = function (config) {
       provider = new Cesium.WebMapTileServiceImageryProvider(options);
     } else {
       var optionsWMS = {
-        url: '//gibs.earthdata.nasa.gov/wms/wms.php' + time,
+        url: '//gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi' + time,
         layers: layer.id,
         parameters: {
           transparent: true,
