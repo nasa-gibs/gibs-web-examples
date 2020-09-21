@@ -1,0 +1,58 @@
+<!doctype html>
+<!--
+   GIBS Web Examples
+
+   Copyright 2013 - 2018 United States Government as represented by the
+   Administrator of the National Aeronautics and Space Administration.
+   All Rights Reserved.
+
+   Licensed under the Apache License, Version 2.0 (the 'License');
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an 'AS IS' BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<html>
+
+<head>
+  <title>GIBS OpenLayers Vector interaction Example</title>
+  <link rel='stylesheet' href='../../../lib/openlayers-6.4.3/ol.css' />
+  <link rel='stylesheet' href='../example.css' />
+  <meta charset="UTF-8">
+  <script src='../../../lib/openlayers-6.4.3/ol.js'></script>
+  <script src='geographic-epsg4326-vector-hover.js'></script>
+  <style>
+
+    #info {
+      z-index: 1;
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      background: rgba(0,60,136,0.7);
+      color: white;
+      border: 0;
+      transition: opacity 100ms ease-in;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='map'><pre id="info"/></div>
+  <div id='attribution'>
+    <a href='http://openlayers.org'>OpenLayers</a>
+    <a href='https://wiki.earthdata.nasa.gov/display/GIBS'>NASA EOSDIS GIBS</a>
+    <a href='https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-hover.js'>
+      View Source
+    </a>
+  </div>
+</body>
+
+</html>
