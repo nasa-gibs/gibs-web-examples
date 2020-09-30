@@ -12,6 +12,9 @@ source for
   * [Antarctic (EPSG:3031)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/antarctic-epsg3031.html)
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/webmercator-epsg3857.html)
   * [Rolling Seven Day Slider](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/time.html)
+  * [Vector Tile Basic Use](https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-basic.html)
+  * [Vector Tile feature interactions](https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-hover.html)
+  * [Vector Tile Using Mapbox Style JSON](https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-mapbox-styles.html)
 * Leaflet
   * [Geographic (EPSG:4326)](https://nasa-gibs.github.io/gibs-web-examples/examples/leaflet/geographic-epsg4326.html)
   * [Arctic (EPSG:3413)](https://nasa-gibs.github.io/gibs-web-examples/examples/leaflet/arctic-epsg3413.html)
@@ -41,7 +44,7 @@ npm start
 
 Navigate your browser to http://localhost:3001.
 
-All examples show a single layer. Visit the
+Most examples show a single layer. Visit the
 [GIBS Available Imagery Products](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products)
 for parameters needed to display other layers.
 
@@ -67,11 +70,14 @@ uses GIBS as its primary image source.
 
 ## OpenLayers
 
-This example uses [OpenLayers](http://openlayers.org/) version 5.1.3.
+These examples use [OpenLayers](http://openlayers.org/) version 6.4.3.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
 example uses proj4js version 2.4.3. This is not required to simply display the map.
+
+#### Mapbox Vector Tile (MVT) Examples
+[Mapbox Vector Tiles](https://docs.mapbox.com/vector-tiles/specification/) are available for some of the GIBS vector datasets. These Openlayers examples show how to style vector tiles using Openlayers styling classes, how to style vector tiles with the [Mapbox Styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) that are provided by GIBS in the [getCapabilities](https://gibs.earthdata.nasa.gov/wmts/epsg4326/std/wmts.cgi?request=GetCapabilities), and how to visualize feature data through map interactions.
 
 ## Leaflet
 

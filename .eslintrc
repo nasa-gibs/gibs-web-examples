@@ -24,7 +24,8 @@
     "mapboxgl": true,
     "Microsoft": true,
     "ol": true,
-    "proj4": true
+    "proj4": true,
+    "olms": true
   },
   "overrides": [
     {
