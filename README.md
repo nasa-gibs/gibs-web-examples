@@ -12,9 +12,9 @@ source for
   * [Antarctic (EPSG:3031)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/antarctic-epsg3031.html)
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/webmercator-epsg3857.html)
   * [Rolling Seven Day Slider](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/time.html)
-  * [Vector Tile Basic Use](https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-basic.html)
-  * [Vector Tile feature interactions](https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-hover.html)
-  * [Vector Tile Using Mapbox Style JSON](https://github.com/nasa-gibs/web-examples/blob/master/examples/openlayers/vectors/geographic-epsg4326-vector-mapbox-styles.html)
+  * [Vector Tile Basic Use](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/vectors/geographic-epsg4326-vector-basic.html)
+  * [Vector Tile feature interactions](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/vectors/geographic-epsg4326-vector-hover.html)
+  * [Vector Tile Using Mapbox Style JSON](https://nasa-gibs.github.io/gibs-web-examples/examples/openlayers/vectors/geographic-epsg4326-vector-mapbox-styles.html)
 * Leaflet
   * [Geographic (EPSG:4326)](https://nasa-gibs.github.io/gibs-web-examples/examples/leaflet/geographic-epsg4326.html)
   * [Arctic (EPSG:3413)](https://nasa-gibs.github.io/gibs-web-examples/examples/leaflet/arctic-epsg3413.html)
