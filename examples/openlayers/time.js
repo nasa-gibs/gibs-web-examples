@@ -71,7 +71,7 @@ window.onload = function () {
       url: 'https://gibs-{a-c}.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?TIME=' + dayParameter(),
       layer: 'MODIS_Terra_CorrectedReflectance_TrueColor',
       format: 'image/jpeg',
-      matrixSet: 'EPSG4326_250m',
+      matrixSet: '250m',
       tileGrid: new ol.tilegrid.WMTS({
         origin: [-180, 90],
         resolutions: [

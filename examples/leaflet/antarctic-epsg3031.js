@@ -23,20 +23,20 @@ window.onload = function () {
     'EPSG:3031',
     '+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +k=1 +x_0=0 +y_0=0 ' +
     '+ellps=WGS84 +datum=WGS84 +units=m +no_defs', {
-      origin: [-4194304, 4194304],
-      resolutions: [
-        8192.0,
-        4096.0,
-        2048.0,
-        1024.0,
-        512.0,
-        256.0
-      ],
-      bounds: L.Bounds([
-        [-4194304, -4194304],
-        [4194304, 4194304]
-      ])
-    }
+    origin: [-4194304, 4194304],
+    resolutions: [
+      8192.0,
+      4096.0,
+      2048.0,
+      1024.0,
+      512.0,
+      256.0
+    ],
+    bounds: L.Bounds([
+      [-4194304, -4194304],
+      [4194304, 4194304]
+    ])
+  }
   );
 
   var map = L.map('map', {
@@ -52,7 +52,7 @@ window.onload = function () {
 
   var layer = L.tileLayer(template, {
     layer: 'MODIS_Aqua_CorrectedReflectance_TrueColor',
-    tileMatrixSet: 'EPSG3031_250m',
+    tileMatrixSet: '250m',
     format: 'image%2Fjpeg',
     time: '2013-12-01',
     tileSize: 512,

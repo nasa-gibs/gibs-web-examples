@@ -25,7 +25,7 @@ window.onload = function () {
     layer: 'MODIS_Terra_CorrectedReflectance_TrueColor',
     style: '',
     format: 'image/jpeg',
-    tileMatrixSetID: 'EPSG4326_250m',
+    tileMatrixSetID: '250m',
     maximumLevel: 8,
     tileWidth: 256,
     tileHeight: 256,
