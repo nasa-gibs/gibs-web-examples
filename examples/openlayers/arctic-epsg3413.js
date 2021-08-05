@@ -42,7 +42,7 @@ window.onload = function () {
     url: 'https://gibs-{a-c}.earthdata.nasa.gov/wmts/epsg3413/best/wmts.cgi?TIME=2013-06-01',
     layer: 'MODIS_Terra_CorrectedReflectance_TrueColor',
     format: 'image/jpeg',
-    matrixSet: 'EPSG3413_250m',
+    matrixSet: '250m',
 
     tileGrid: new ol.tilegrid.WMTS({
       origin: [-4194304, 4194304],

@@ -22,19 +22,19 @@ window.onload = function () {
   var config = {
     resolutions: {
       '250m': {
-        tileMatrixSetID: 'EPSG4326_250m',
+        tileMatrixSetID: '250m',
         maximumLevel: 8
       },
       '500m': {
-        tileMatrixSetID: 'EPSG4326_500m',
+        tileMatrixSetID: '500m',
         maximumLevel: 7
       },
       '1km': {
-        tileMatrixSetID: 'EPSG4326_1km',
+        tileMatrixSetID: '1km',
         maximumLevel: 6
       },
       '2km': {
-        tileMatrixSetID: 'EPSG4326_2km',
+        tileMatrixSetID: '2km',
         maximumLevel: 5
       }
     },
