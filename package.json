@@ -17,7 +17,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "express": "^4.16.3",
-    "shelljs": "^0.8.2",
+    "shelljs": "^0.8.5",
     "stylelint": "^13.7.2",
     "tar": "^4.4.18"
   }
