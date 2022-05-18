@@ -45,7 +45,7 @@ npm start
 Navigate your browser to http://localhost:3001.
 
 Most examples show a single layer. Visit the
-[GIBS Available Imagery Products](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products)
+[GIBS Visualization Product Catalog](https://nasa-gibs.github.io/gibs-api-docs/available-visualizations/#visualization-product-catalog)
 for parameters needed to display other layers.
 
 The [WMTS](http://www.opengeospatial.org/standards/wmts) standard does not
