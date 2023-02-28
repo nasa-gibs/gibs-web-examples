@@ -87,7 +87,7 @@ window.onload = function () {
     })
   });
   const vectorLayer = new ol.layer.VectorTile({
-    renderMode: 'image',
+    renderMode: 'vector',
     source: new ol.source.VectorTile({
       visible: true,
       url: 'https://gibs-{a-c}.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?TIME=2020-03-18T00:00:00Z&layer=GRanD_Dams&tilematrixset=2km&Service=WMTS&Request=GetTile&Version=1.0.0&FORMAT=application%2Fvnd.mapbox-vector-tile&TileMatrix={z}&TileCol={x}&TileRow={y}',

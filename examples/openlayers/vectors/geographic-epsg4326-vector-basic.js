@@ -26,7 +26,7 @@ window.onload = function () {
   });
 
   const vectorLayer = new ol.layer.VectorTile({
-    renderMode: 'image',
+    renderMode: 'vector',
     style: circleStyle,
     source: new ol.source.VectorTile({
       visible: true,

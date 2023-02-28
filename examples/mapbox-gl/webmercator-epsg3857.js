@@ -34,9 +34,9 @@ window.onload = function () {
         gibs: {
           type: 'raster',
           tiles: [
-            '//gibs-a.earthdata.nasa.gov/' + tilePath,
-            '//gibs-b.earthdata.nasa.gov/' + tilePath,
-            '//gibs-c.earthdata.nasa.gov/' + tilePath
+            'https://gibs-a.earthdata.nasa.gov/' + tilePath,
+            'https://gibs-b.earthdata.nasa.gov/' + tilePath,
+            'https://gibs-c.earthdata.nasa.gov/' + tilePath
           ],
           tileSize: 256
         }

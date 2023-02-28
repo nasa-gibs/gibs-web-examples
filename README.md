@@ -42,6 +42,13 @@ npm install
 npm start
 ```
 
+or for hot-reload
+
+```bash
+npm install
+npm run dev
+```
+
 Navigate your browser to http://localhost:3001.
 
 Most examples show a single layer. Visit the
@@ -70,7 +77,7 @@ uses GIBS as its primary image source.
 
 ## OpenLayers
 
-These examples use [OpenLayers](http://openlayers.org/) version 6.4.3.
+These examples use [OpenLayers](http://openlayers.org/) version 7.2.2.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
@@ -81,7 +88,7 @@ example uses proj4js version 2.8.1. This is not required to simply display the m
 
 ## Leaflet
 
-This example uses [Leaflet](http://leafletjs.com) version 1.3.3.
+This example uses [Leaflet](http://leafletjs.com) version 1.9.3.
 
 To properly support the polar projections, the
 [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) plugin must be
@@ -92,7 +99,7 @@ here: https://github.com/Leaflet/Leaflet/issues/3575
 
 ## Cesium
 
-This example uses [Cesium](http://cesiumjs.org/) version 1.47.
+This example uses [Cesium](http://cesiumjs.org/) version 1.102.
 
 Use this
 [GeographicTilingScheme](https://github.com/nasa-gibs/gibs-web-examples/blob/master/examples/cesium/gibs.js) when accessing the EPSG:4326 GIBS endpoint.
