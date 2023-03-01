@@ -107,7 +107,7 @@ Use this
 ## Mapbox GL
 
 This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/)
-version 0.47.
+version 2.13.0.
 
 ## Bing
 
