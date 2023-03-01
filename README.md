@@ -106,16 +106,24 @@ Use this
 
 ## Mapbox GL
 
-This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/)
-version 2.13.0.
+This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/), version 2.13.0.
+
+Mapbox GL requires an API key.
+The key should be inserted [here](./examples/mapbox-gl/webmercator-epsg3857.js#L27)
 
 ## Bing
 
 This example uses the [Bing Maps Control](https://msdn.microsoft.com/en-us/library/mt712542.aspx), version 8.
 
+Bing requires and API key.
+The key should be insterted [here](./examples/bing/webmercator-epsg3857.js#L25)
+
 ## Google Maps
 
 This example uses the [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial), version 3.
+
+Google Maps requires an API key.
+The key should be inserted [here](./examples/google/webmercator-epsg3857.html#L30)
 
 ## Questions
 
