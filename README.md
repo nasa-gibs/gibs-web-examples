@@ -106,11 +106,11 @@ Use this
 
 ## Mapbox GL
 
-This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/)
-version 2.13.0 and 0.47.0.
+This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/) version 1.13.3.
 
-Mapbox GL v2 requires an API key.
-The key should be inserted [here](./examples/mapbox-gl/v2.13.0/webmercator-epsg3857.js#L27)
+## MapLibre GL
+
+This example uses [MapLibre GL](https://maplibre.org/maplibre-gl-js-docs/api/) version 2.4.0.
 
 ## Bing
 

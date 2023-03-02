@@ -23,10 +23,7 @@ window.onload = function () {
     'MODIS_Terra_CorrectedReflectance_TrueColor/default/' +
     '2018-06-01/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg';
 
-  // Add token here when using Mapbox layers
-  mapboxgl.accessToken = 'undefined';
-
-  new mapboxgl.Map({
+  new maplibregl.Map({
     container: 'map',
     style: {
       version: 8,
