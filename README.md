@@ -42,6 +42,13 @@ npm install
 npm start
 ```
 
+or for hot-reload
+
+```bash
+npm install
+npm run dev
+```
+
 Navigate your browser to http://localhost:3001.
 
 Most examples show a single layer. Visit the
@@ -70,18 +77,18 @@ uses GIBS as its primary image source.
 
 ## OpenLayers
 
-These examples use [OpenLayers](http://openlayers.org/) version 6.4.3.
+These examples use [OpenLayers](http://openlayers.org/) version 7.2.2.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
-example uses proj4js version 2.4.3. This is not required to simply display the map.
+example uses proj4js version 2.8.1. This is not required to simply display the map.
 
 #### Mapbox Vector Tile (MVT) Examples
 [Mapbox Vector Tiles](https://docs.mapbox.com/vector-tiles/specification/) are available for some of the GIBS vector datasets. These Openlayers examples show how to style vector tiles using Openlayers styling classes, how to style vector tiles with the [Mapbox Styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) that are provided by GIBS in the [getCapabilities](https://gibs.earthdata.nasa.gov/wmts/epsg4326/std/wmts.cgi?request=GetCapabilities), and how to visualize feature data through map interactions.
 
 ## Leaflet
 
-This example uses [Leaflet](http://leafletjs.com) version 1.3.3.
+This example uses [Leaflet](http://leafletjs.com) version 1.9.3.
 
 To properly support the polar projections, the
 [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) plugin must be
@@ -92,23 +99,32 @@ here: https://github.com/Leaflet/Leaflet/issues/3575
 
 ## Cesium
 
-This example uses [Cesium](http://cesiumjs.org/) version 1.47.
+This example uses [Cesium](http://cesiumjs.org/) version 1.102.
 
 Use this
 [GeographicTilingScheme](https://github.com/nasa-gibs/gibs-web-examples/blob/master/examples/cesium/gibs.js) when accessing the EPSG:4326 GIBS endpoint.
 
 ## Mapbox GL
 
-This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/)
-version 0.47.
+This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/) version 1.13.3.
+
+## MapLibre GL
+
+This example uses [MapLibre GL](https://maplibre.org/maplibre-gl-js-docs/api/) version 2.4.0.
 
 ## Bing
 
 This example uses the [Bing Maps Control](https://msdn.microsoft.com/en-us/library/mt712542.aspx), version 8.
 
+Bing requires and API key.
+The key should be insterted [here](./examples/bing/webmercator-epsg3857.js#L25)
+
 ## Google Maps
 
 This example uses the [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial), version 3.
+
+Google Maps requires an API key.
+The key should be inserted [here](./examples/google/webmercator-epsg3857.html#L30)
 
 ## Questions
 

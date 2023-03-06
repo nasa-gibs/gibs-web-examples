@@ -31,7 +31,7 @@ window.onload = function () {
   });
 
   var uriConstructor = function (tile) {
-    return '//gibs.earthdata.nasa.gov/wmts/epsg3857/best/' +
+    return 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/' +
       'MODIS_Terra_Aerosol/default/2013-12-02/' +
       'GoogleMapsCompatible_Level6/' +
       tile.zoom + '/' + tile.y + '/' + tile.x + '.png';

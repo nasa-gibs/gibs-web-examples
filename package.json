@@ -7,17 +7,19 @@
     "clean": "node tasks/clean.js",
     "dist": "node tasks/dist.js",
     "start": "node tasks/start.js",
-    "test": "npx eslint examples && npx stylelint examples/**/*.css"
+    "test": "npx eslint examples && npx stylelint examples/**/*.css",
+    "dev": "nodemon tasks/start.js"
   },
   "devDependencies": {
-    "eslint": "^8.32.0",
+    "eslint": "^8.35.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "shelljs": "^0.8.5",
-    "stylelint": "^14.16.1",
+    "stylelint": "^15.2.0",
     "tar": "^6.1.13"
   }
 }
