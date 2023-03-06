@@ -117,7 +117,7 @@ This example uses [MapLibre GL](https://maplibre.org/maplibre-gl-js-docs/api/) v
 This example uses the [Bing Maps Control](https://msdn.microsoft.com/en-us/library/mt712542.aspx), version 8.
 
 Bing requires and API key.
-The key should be insterted [here](./examples/bing/webmercator-epsg3857.js#L25)
+The key should be inserted [here](./examples/bing/webmercator-epsg3857.js#L25)
 
 ## Google Maps
 
