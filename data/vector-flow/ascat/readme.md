@@ -1,5 +1,5 @@
 # ASCAT DATA
-This dataset contains operational near-real-time Level 2 coastal ocean surface wind vector retrievals from the Advanced Scatterometer (ASCAT) on MetOp-A.
+This dataset contains operational near-real-time Level 2 coastal ocean surface wind vector retrievals from the Advanced Scatterometer (ASCAT) on MetOp-B.
 
 Learn more about ASCAT here: https://podaac.jpl.nasa.gov/dataset/ASCATB-L2-Coastal
 
