@@ -109,7 +109,7 @@ window.onload = function () {
       attribution:
         '<a href="https://wiki.earthdata.nasa.gov/display/GIBS">' +
         'NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;' +
-        '<a href="https://github.com/nasa-gibs/web-examples/blob/master/examples/leaflet/time.js">' +
+        '<a href="https://github.com/nasa-gibs/web-examples/blob/main/examples/leaflet/time.js">' +
         'View Source' +
         '</a>'
     });
