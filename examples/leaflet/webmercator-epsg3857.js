@@ -1,7 +1,7 @@
 /**
  * GIBS Web Examples
  *
- * Copyright 2013 - 2020 United States Government as represented by the
+ * Copyright 2013 - 2023 United States Government as represented by the
  * Administrator of the National Aeronautics and Space Administration.
  * All Rights Reserved.
  *
@@ -51,7 +51,7 @@ window.onload = function () {
     attribution:
       '<a href="https://wiki.earthdata.nasa.gov/display/GIBS">' +
       'NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;' +
-      '<a href="https://github.com/nasa-gibs/web-examples/blob/master/examples/leaflet/webmercator-epsg3857.js">' +
+      '<a href="https://github.com/nasa-gibs/web-examples/blob/main/examples/leaflet/webmercator-epsg3857.js">' +
       'View Source' +
       '</a>'
   });
