@@ -10,4 +10,4 @@ The 2nd value in the filename represents the date as YYYYMMDD.
 
 The 3rd value in the filename represents the time as HHMMSS.
 
-Note: This sample of NASA Earth data was published here for testing and evaluation of vector visualization techniques. Its format and availability is subject to change during this evaluation process. Community feedback is welcome at support@earthdata.nasa.gov!
+Note: This sample of NASA Earth data was published here for testing and evaluation of vector visualization techniques. Its format and availability is subject to change during this evaluation process. Community feedback is welcome at earthdata-support@nasa.gov!

@@ -131,4 +131,4 @@ The key should be inserted [here](./examples/google/webmercator-epsg3857.html#L3
 ## Questions
 
 Send questions or comments to
-[support@earthdata.nasa.gov](mailto:support@earthdata.nasa.gov)
+[earthdata-support@nasa.gov](mailto:earthdata-support@nasa.gov)
