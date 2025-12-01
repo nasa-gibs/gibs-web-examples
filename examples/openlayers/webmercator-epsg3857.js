@@ -26,8 +26,7 @@ window.onload = function () {
       zoom: 3,
       maxZoom: 9
     }),
-    target: 'map',
-    renderer: ['canvas', 'dom']
+    target: 'map'
   });
 
   var source = new ol.source.XYZ({

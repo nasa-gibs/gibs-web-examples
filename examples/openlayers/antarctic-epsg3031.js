@@ -34,8 +34,7 @@ window.onload = function () {
       zoom: 1,
       maxZoom: 5
     }),
-    target: 'map',
-    renderer: ['canvas', 'dom']
+    target: 'map'
   });
 
   var source = new ol.source.WMTS({
