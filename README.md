@@ -79,14 +79,14 @@ uses GIBS as its primary image source.
 
 ## OpenLayers
 
-These examples use [OpenLayers](http://openlayers.org/) version 7.2.2.
+These examples use [OpenLayers](http://openlayers.org/) version 10.7.0.
 
 If geometry transformations are required using coordinates in the polar systems,
 [proj4js](http://trac.osgeo.org/proj4js), version 2, must be included. This
-example uses proj4js version 2.8.1. This is not required to simply display the map.
+example uses proj4js version 2.20.2. This is not required to simply display the map.
 
 #### Mapbox Vector Tile (MVT) Examples
-[Mapbox Vector Tiles](https://docs.mapbox.com/vector-tiles/specification/) are available for some of the GIBS vector datasets. These Openlayers examples show how to style vector tiles using Openlayers styling classes, how to style vector tiles with the [Mapbox Styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) that are provided by GIBS in the [getCapabilities](https://gibs.earthdata.nasa.gov/wmts/epsg4326/std/wmts.cgi?request=GetCapabilities), and how to visualize feature data through map interactions.
+[Mapbox Vector Tiles](https://docs.mapbox.com/vector-tiles/specification/) are available for some of the GIBS vector datasets. These Openlayers examples show how to style vector tiles using Openlayers styling classes, how to style vector tiles with the [Mapbox Styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) that are provided by GIBS in the [getCapabilities](https://gibs.earthdata.nasa.gov/wmts/epsg4326/std/wmts.cgi?request=GetCapabilities), and how to visualize feature data through map interactions. The Mapbox Style example uses [ol-mapbox-style](https://github.com/openlayers/ol-mapbox-style) version 13.1.1.
 
 ## Leaflet
 

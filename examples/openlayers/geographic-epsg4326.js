@@ -28,8 +28,7 @@ window.onload = function () {
       minZoom: 2,
       maxZoom: 8
     }),
-    target: 'map',
-    renderer: ['canvas', 'dom']
+    target: 'map'
   });
 
   var source = new ol.source.WMTS({

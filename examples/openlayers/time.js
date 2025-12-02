@@ -41,8 +41,7 @@ window.onload = function () {
       zoom: 2,
       maxZoom: 8
     }),
-    target: 'map',
-    renderer: ['canvas', 'dom']
+    target: 'map'
   });
 
   function update() {
