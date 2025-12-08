@@ -90,7 +90,7 @@ example uses proj4js version 2.20.2. This is not required to simply display the 
 
 ## Leaflet
 
-This example uses [Leaflet](http://leafletjs.com) version 1.9.3.
+This example uses [Leaflet](http://leafletjs.com) version 1.9.4.
 
 To properly support the polar projections, the
 [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) plugin must be
