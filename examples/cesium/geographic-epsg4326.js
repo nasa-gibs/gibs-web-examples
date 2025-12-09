@@ -32,11 +32,13 @@ window.onload = function () {
     tilingScheme: gibs.GeographicTilingScheme()
   });
 
-  new Cesium.Viewer('map', {
+  var viewer = new Cesium.Viewer('map', {
     animation: false, // Only showing one day in this demo
+    baseLayer: false, // We'll add our own base layer
     baseLayerPicker: false, // Only showing one layer in this demo
     geocoder: false, // Cesium Ion account needed for geocoder
-    timeline: false, // Only showing one day in this demo
-    imageryProvider: provider // The layer being shown
+    timeline: false // Only showing one day in this demo
   });
+
+  viewer.imageryLayers.addImageryProvider(provider);
 };

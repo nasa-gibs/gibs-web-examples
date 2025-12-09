@@ -72,10 +72,12 @@ window.onload = function () {
 
   var viewer = new Cesium.Viewer('map', {
     clockViewModel: clockViewModel,
+    baseLayer: false, // We'll add our own base layer
     baseLayerPicker: false, // Only showing one layer in this demo
-    imageryProvider: createDailyProvider(),
     geocoder: false // Cesium Ion account needed for geocoder
   });
+
+  viewer.imageryLayers.addImageryProvider(createDailyProvider());
 
   // Set the timeline to show up to a year ago
   var previousYear = new Date();

@@ -101,7 +101,7 @@ here: https://github.com/Leaflet/Leaflet/issues/3575
 
 ## Cesium
 
-This example uses [Cesium](http://cesiumjs.org/) version 1.102.
+This example uses [Cesium](http://cesiumjs.org/) version 1.136.
 
 Use this
 [GeographicTilingScheme](https://github.com/nasa-gibs/gibs-web-examples/blob/master/examples/cesium/gibs.js) when accessing the EPSG:4326 GIBS endpoint.
