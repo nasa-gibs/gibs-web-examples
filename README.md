@@ -112,7 +112,7 @@ This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/) ver
 
 ## MapLibre GL
 
-This example uses [MapLibre GL](https://maplibre.org/maplibre-gl-js-docs/api/) version 2.4.0.
+This example uses [MapLibre GL](https://maplibre.org/maplibre-gl-js-docs/api/) version 5.14.0.
 
 ## Bing
 
