@@ -1,7 +1,7 @@
 /**
  * GIBS Web Examples
  *
- * Copyright 2013 - 2023 United States Government as represented by the
+ * Copyright 2013 - 2026 United States Government as represented by the
  * Administrator of the National Aeronautics and Space Administration.
  * All Rights Reserved.
  *
@@ -59,8 +59,8 @@ window.onload = function () {
     noWrap: true,
     continuousWorld: true,
     attribution:
-      '<a href="https://wiki.earthdata.nasa.gov/display/GIBS">' +
-      'NASA EOSDIS GIBS</a>&nbsp;&nbsp;&nbsp;' +
+      '<a href="https://earthdata.nasa.gov/gibs">' +
+      'NASA ESDIS GIBS</a>&nbsp;&nbsp;&nbsp;' +
       '<a href="https://github.com/nasa-gibs/web-examples/blob/main/examples/leaflet/arctic-epsg3413.js">' +
       'View Source' +
       '</a>'
