@@ -2,7 +2,7 @@
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for
-[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Cesium](http://cesiumjs.org/), [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/), [Bing](http://www.bing.com/maps/), and [Google Maps](https://maps.google.com)
+[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Cesium](http://cesiumjs.org/), [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/), and [Google Maps](https://maps.google.com)
 
 ## Live Examples
 
@@ -30,8 +30,6 @@ source for
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/mapbox-gl/webmercator-epsg3857.html)
 * Maplibre GL
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/maplibre-gl/webmercator-epsg3857.html)
-* Bing
-  * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/bing/webmercator-epsg3857.html)
 * Google Maps
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/google/webmercator-epsg3857.html)
 
@@ -113,13 +111,6 @@ This example uses [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/) ver
 ## MapLibre GL
 
 This example uses [MapLibre GL](https://maplibre.org/maplibre-gl-js-docs/api/) version 5.14.0.
-
-## Bing
-
-This example uses the [Bing Maps Control](https://msdn.microsoft.com/en-us/library/mt712542.aspx), version 8.
-
-Bing requires and API key.
-The key should be inserted [here](./examples/bing/webmercator-epsg3857.js#L25)
 
 ## Google Maps
 
