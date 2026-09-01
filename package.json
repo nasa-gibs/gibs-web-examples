@@ -16,9 +16,9 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.6.0",
-    "express": "^4.20.0",
+    "express": "^5.2.1",
     "nodemon": "^3.1.14",
-    "shelljs": "^0.8.5",
+    "shelljs": "^0.10.0",
     "stylelint": "^16.0.0",
     "tar": "^7.5.21"
   }
