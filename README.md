@@ -2,7 +2,7 @@
 
 This project shows how to use [GIBS](https://earthdata.nasa.gov/gibs) as a tile
 source for
-[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Cesium](http://cesiumjs.org/), [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/), and [Google Maps](https://maps.google.com)
+[OpenLayers](http://openlayers.org), [Leaflet](http://leafletjs.com), [Cesium](http://cesiumjs.org/), [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/), [MapLibre GL JS](https://maplibre.org), and [Google Maps](https://maps.google.com)
 
 ## Live Examples
 
@@ -28,7 +28,9 @@ source for
   * [Demonstration of GIBS Layers](https://nasa-gibs.github.io/gibs-web-examples/examples/cesium/gibs-layers)
 * Mapbox GL
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/mapbox-gl/webmercator-epsg3857.html)
-* Maplibre GL
+* MapLibre GL JS
+  * [Arctic (EPSG:3413)](https://nasa-gibs.github.io/gibs-web-examples/examples/maplibre-gl/arctic-epsg3413.html)
+  * [Antarctic (EPSG:3031)](https://nasa-gibs.github.io/gibs-web-examples/examples/maplibre-gl/antarctic-epsg3031.html)
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/maplibre-gl/webmercator-epsg3857.html)
 * Google Maps
   * [Web Mercator (EPSG:3857)](https://nasa-gibs.github.io/gibs-web-examples/examples/google/webmercator-epsg3857.html)
