@@ -18,6 +18,8 @@
  * limitations under the License.
  */
 
+import * as maplibregl from 'https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-gl.mjs';
+
 window.onload = function () {
   var tilePath = 'wmts/epsg3857/best/' +
     'MODIS_Terra_CorrectedReflectance_TrueColor/default/' +
